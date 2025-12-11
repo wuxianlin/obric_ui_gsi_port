@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/util/ArrayUtils;->newUnpaddedIntArray(I)[I,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,63,5,63,88,maxTargetSdk=30&trackingBug=170729553L
+Lcom/android/internal/util/ArrayUtils;->newUnpaddedArray(Ljava/lang/Class;I)[Ljava/lang/Object;,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,89,5,89,88,maxTargetSdk=30&trackingBug=170729553L
+Lcom/android/internal/util/ArrayUtils;->emptyArray(Ljava/lang/Class;)[Ljava/lang/Object;,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,159,5,159,25,
+Lcom/android/internal/util/ArrayUtils;->isEmpty([Ljava/lang/Object;)Z,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,203,5,203,25,
+Lcom/android/internal/util/ArrayUtils;->contains([Ljava/lang/Object;Ljava/lang/Object;)Z,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,263,5,263,25,
+Lcom/android/internal/util/ArrayUtils;->indexOf([Ljava/lang/Object;Ljava/lang/Object;)I,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,272,5,272,25,
+Lcom/android/internal/util/ArrayUtils;->contains([II)Z,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,307,5,307,25,
+Lcom/android/internal/util/ArrayUtils;->appendElement(Ljava/lang/Class;[Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,471,5,471,88,maxTargetSdk=30&trackingBug=170729553L
+Lcom/android/internal/util/ArrayUtils;->removeElement(Ljava/lang/Class;[Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,501,5,501,88,maxTargetSdk=30&trackingBug=170729553L
+Lcom/android/internal/util/ArrayUtils;->appendInt([II)[I,frameworks/base/core/java/com/android/internal/util/ArrayUtils.java,548,5,548,25,

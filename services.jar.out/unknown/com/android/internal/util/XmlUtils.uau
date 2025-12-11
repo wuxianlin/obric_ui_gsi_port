@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/util/XmlUtils;->skipCurrentTag(Lorg/xmlpull/v1/XmlPullParser;)V,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,262,5,262,25,
+Lcom/android/internal/util/XmlUtils;->convertValueToBoolean(Ljava/lang/CharSequence;Z)Z,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,286,5,286,25,
+Lcom/android/internal/util/XmlUtils;->convertValueToInt(Ljava/lang/CharSequence;I)I,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,304,5,304,25,
+Lcom/android/internal/util/XmlUtils;->writeMapXml(Ljava/util/Map;Ljava/io/OutputStream;)V,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,402,5,402,25,
+Lcom/android/internal/util/XmlUtils;->readMapXml(Ljava/io/InputStream;)Ljava/util/HashMap;,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,966,5,966,25,
+Lcom/android/internal/util/XmlUtils;->beginDocument(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,1687,5,1687,25,
+Lcom/android/internal/util/XmlUtils;->nextElement(Lorg/xmlpull/v1/XmlPullParser;)V,frameworks/base/core/java/com/android/internal/util/XmlUtils.java,1706,5,1706,25,

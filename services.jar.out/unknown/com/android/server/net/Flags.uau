@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/server/net/Flags;->networkBlockedForTopSleepingAndAbove()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/net/net_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/net/Flags.java,14,5,14,25,
+Lcom/android/server/net/Flags;->useDifferentDelaysForBackgroundChain()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/net/net_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/net/Flags.java,20,5,20,25,
+Lcom/android/server/net/Flags;->useMeteredFirewallChains()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/net/net_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/net/Flags.java,26,5,26,25,

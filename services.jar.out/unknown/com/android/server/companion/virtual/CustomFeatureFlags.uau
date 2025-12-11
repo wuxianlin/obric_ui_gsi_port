@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/server/companion/virtual/CustomFeatureFlags;->dumpHistory()Z,out/soong/.intermediates/frameworks/base/services/companion/java/com/android/server/companion/virtual/virtualdevice_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/companion/virtual/CustomFeatureFlags.java,21,5,21,25,

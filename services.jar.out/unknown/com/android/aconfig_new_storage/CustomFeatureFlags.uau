@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/aconfig_new_storage/CustomFeatureFlags;->enableAconfigStorageDaemon()Z,out/soong/.intermediates/system/server_configurable_flags/aconfigd/aconfig_new_storage_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/aconfig_new_storage/CustomFeatureFlags.java,21,5,21,25,

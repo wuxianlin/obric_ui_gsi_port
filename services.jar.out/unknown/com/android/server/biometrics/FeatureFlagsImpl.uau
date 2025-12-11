@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/server/biometrics/FeatureFlagsImpl;->faceVhalFeature()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/biometrics/biometrics_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/biometrics/FeatureFlagsImpl.java,8,5,8,25,
+Lcom/android/server/biometrics/FeatureFlagsImpl;->useVhalForTesting()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/biometrics/biometrics_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/biometrics/FeatureFlagsImpl.java,15,5,15,25,

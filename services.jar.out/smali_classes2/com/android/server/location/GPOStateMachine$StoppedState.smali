@@ -1,0 +1,375 @@
+.class Lcom/android/server/location/GPOStateMachine$StoppedState;
+.super Lcom/android/server/location/GPOStateMachine$BaseAdapterState;
+.source "GPOStateMachine.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/location/GPOStateMachine;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "StoppedState"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/android/server/location/GPOStateMachine;
+
+
+# direct methods
+.method private constructor <init>(Lcom/android/server/location/GPOStateMachine;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            null
+        }
+    .end annotation
+
+    .line 368
+    iput-object p1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lcom/android/server/location/GPOStateMachine$BaseAdapterState;-><init>(Lcom/android/server/location/GPOStateMachine;Lcom/android/server/location/GPOStateMachine$BaseAdapterState-IA;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/android/server/location/GPOStateMachine;Lcom/android/server/location/GPOStateMachine$StoppedState-IA;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0, p1}, Lcom/android/server/location/GPOStateMachine$StoppedState;-><init>(Lcom/android/server/location/GPOStateMachine;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public enter()V
+    .locals 2
+
+    .line 376
+    invoke-super {p0}, Lcom/android/server/location/GPOStateMachine$BaseAdapterState;->enter()V
+
+    .line 377
+    iget-object v0, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    const/4 v1, 0x6
+
+    invoke-static {v0, v1}, Lcom/android/server/location/GPOStateMachine;->access$000(Lcom/android/server/location/GPOStateMachine;I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 378
+    iget-object v0, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v0, v1}, Lcom/android/server/location/GPOStateMachine;->access$100(Lcom/android/server/location/GPOStateMachine;I)V
+
+    .line 380
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v0}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetmStarLocation(Lcom/android/server/location/GPOStateMachine;)Lcom/android/server/location/StarLocation;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/server/location/StarLocation;->updateLastSteps()V
+
+    .line 381
+    return-void
+.end method
+
+.method public getStateValue()I
+    .locals 1
+
+    .line 371
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public processMessage(Landroid/os/Message;)Z
+    .locals 6
+    .param p1, "msg"    # Landroid/os/Message;
+
+    .line 385
+    iget-object v0, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v0}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetmStateLock(Lcom/android/server/location/GPOStateMachine;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    .line 386
+    :try_start_0
+    invoke-super {p0, p1}, Lcom/android/server/location/GPOStateMachine$BaseAdapterState;->processMessage(Landroid/os/Message;)Z
+
+    .line 387
+    iget v1, p1, Landroid/os/Message;->what:I
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    packed-switch v1, :pswitch_data_0
+
+    .line 422
+    :pswitch_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Unhandled message - "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v3, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget v4, p1, Landroid/os/Message;->what:I
+
+    invoke-static {v3, v4}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$mmessageString(Lcom/android/server/location/GPOStateMachine;I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lcom/android/server/location/GPOStateMachine$BaseAdapterState;->logv(Ljava/lang/String;)V
+
+    .line 423
+    monitor-exit v0
+
+    return v2
+
+    .line 426
+    :catchall_0
+    move-exception v1
+
+    goto/16 :goto_0
+
+    .line 413
+    :pswitch_1
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v1}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetmGlpRequest(Lcom/android/server/location/GPOStateMachine;)Ljava/util/concurrent/ConcurrentHashMap;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 414
+    invoke-static {}, Lcom/android/server/location/LocationLogsRecorder;->getInstance()Lcom/android/server/location/LocationLogsRecorder;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "gnss"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "MSG_RESET_GLP_MAP received, but mGlpRequest is not empty: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v5}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetmGlpRequest(Lcom/android/server/location/GPOStateMachine;)Ljava/util/concurrent/ConcurrentHashMap;
+
+    move-result-object v5
+
+    .line 417
+    invoke-virtual {v5}, Ljava/util/concurrent/ConcurrentHashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Ljava/util/Set;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 414
+    invoke-virtual {v1, v2, v4}, Lcom/android/server/location/LocationLogsRecorder;->writeLocationLogsAsync(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 420
+    :cond_0
+    monitor-exit v0
+
+    return v3
+
+    .line 410
+    :pswitch_2
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v1}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetmStarLocation(Lcom/android/server/location/GPOStateMachine;)Lcom/android/server/location/StarLocation;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/server/location/StarLocation;->unregisterNetworkLocationUpdates()V
+
+    .line 411
+    monitor-exit v0
+
+    return v3
+
+    .line 407
+    :pswitch_3
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget-object v3, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    invoke-static {v1, v2, v3}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$mprocessRequest(Lcom/android/server/location/GPOStateMachine;ZLjava/lang/Object;)Z
+
+    .line 408
+    monitor-exit v0
+
+    return v2
+
+    .line 390
+    :pswitch_4
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-virtual {v1}, Lcom/android/server/location/GPOStateMachine;->disableFeature()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 391
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    invoke-static {v1, v3, v2}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$mprocessRequest(Lcom/android/server/location/GPOStateMachine;ZLjava/lang/Object;)Z
+
+    .line 392
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget-object v2, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v2}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetSTATE_RUNNING(Lcom/android/server/location/GPOStateMachine;)Lcom/android/internal/util/State;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
+
+    .line 393
+    monitor-exit v0
+
+    return v3
+
+    .line 395
+    :cond_1
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    const/16 v4, 0x8
+
+    invoke-static {v1, v4}, Lcom/android/server/location/GPOStateMachine;->access$200(Lcom/android/server/location/GPOStateMachine;I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 396
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v1, v4}, Lcom/android/server/location/GPOStateMachine;->access$300(Lcom/android/server/location/GPOStateMachine;I)V
+
+    .line 398
+    :cond_2
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget-object v4, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    invoke-static {v1, v3, v4}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$mprocessRequest(Lcom/android/server/location/GPOStateMachine;ZLjava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    .line 399
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v1}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetmFlagCurDisableGpo(Lcom/android/server/location/GPOStateMachine;)Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 400
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget-object v3, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v3}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetSTATE_RUNNING(Lcom/android/server/location/GPOStateMachine;)Lcom/android/internal/util/State;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
+
+    .line 401
+    monitor-exit v0
+
+    return v2
+
+    .line 403
+    :cond_3
+    iget-object v1, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    iget-object v2, p0, Lcom/android/server/location/GPOStateMachine$StoppedState;->this$0:Lcom/android/server/location/GPOStateMachine;
+
+    invoke-static {v2}, Lcom/android/server/location/GPOStateMachine;->-$$Nest$fgetSTATE_BLOCKED(Lcom/android/server/location/GPOStateMachine;)Lcom/android/internal/util/State;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
+
+    .line 404
+    nop
+
+    .line 425
+    monitor-exit v0
+
+    return v3
+
+    .line 426
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_4
+        :pswitch_3
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method

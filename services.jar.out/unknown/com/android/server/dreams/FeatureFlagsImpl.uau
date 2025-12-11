@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/server/dreams/FeatureFlagsImpl;->useBatteryChangedBroadcast()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/dreams/dreams_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/dreams/FeatureFlagsImpl.java,8,5,8,25,
