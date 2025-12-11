@@ -145,6 +145,7 @@
     if-ge v3, v1, :cond_0
 
     .line 37
+    if-eqz p0, :goto_wxl
     iget-object v4, p0, Lcom/android/server/power/teardown/hwteardown/GpuTeardown;->mCurGpuClockStat:[J
 
     aget-wide v4, v4, v3
@@ -181,6 +182,7 @@
     add-int/2addr v0, v4
 
     .line 36
+    :goto_wxl
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
