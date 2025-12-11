@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.provision.widget.ORoundedListItemText android:id="@id/user_confirm_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" app:oui_list_item_subtitle="@string/user_confirm_policy_sub" app:oui_list_item_title="@string/user_confirm_policy" app:oui_list_item_trailing_text="@string/more_detail" />
+    <com.android.provision.widget.ORoundedListItemText android:id="@id/privacy_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" app:oui_list_item_subtitle="@string/privacy_policy_sub" app:oui_list_item_title="@string/privacy_policy" app:oui_list_item_trailing_text="@string/more_detail" />
+    <com.obric.oui.sectiontitlebar.OSectionTitleBar android:layout_marginTop="20.0dip" android:layout_marginHorizontal="16.0dip" app:oui_titleText="@string/basic_services_policy" app:oui_useBadgeView="false" style="@style/OSectionTitleBar.M" />
+    <LinearLayout android:orientation="vertical" android:id="@id/basic_services_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.obric.oui.button.OButton android:layout_gravity="center_horizontal" android:id="@id/debug_to_assistant" android:visibility="gone" android:layout_width="200.0dip" android:text="@string/activity_assistant" android:layout_marginVertical="12.0dip" style="@style/OButton.L1.Standard.Primary" />
+</LinearLayout>

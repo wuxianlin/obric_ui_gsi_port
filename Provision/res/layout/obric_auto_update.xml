@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="16.0dip" android:paddingVertical="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/oui_blueish_gray_1" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.obric.oui.button.OIconButton android:id="@id/app_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:oui_radius="99.0dip" />
+        <com.obric.oui.text.OTextView android:textColor="@color/oui_text_1" android:ellipsize="end" android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/app_icon" android:layout_below="@id/app_icon" android:layout_alignParentTop="true" android:layout_marginStart="16.0dip" style="@style/Title_Title_M" />
+        <com.obric.oui.text.OTextView android:textColor="@color/oui_text_3" android:id="@id/app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/app_icon" android:layout_below="@id/app_name" android:layout_marginStart="16.0dip" style="@style/Label_M_Thin" />
+        <com.obric.appstore.autoupdate.MaxScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/app_icon">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/oui_text_3" android:id="@id/tip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auto_install_log" style="@style/Body_S" />
+                <TextView android:textColor="@color/oui_text_1" android:id="@id/app_update_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/Body_M" />
+                <com.obric.oui.text.OTextView android:textColor="@color/oui_text_3" android:id="@id/log_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/auto_update_log" style="@style/Body_S" />
+                <com.obric.oui.text.OTextView android:textColor="@color/oui_text_1" android:id="@id/app_update_log" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/Body_M" />
+            </LinearLayout>
+        </com.obric.appstore.autoupdate.MaxScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/wv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.obric.oui.picker.reels.views.WheelView android:id="@id/wv_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:oui_wheelCyclic="false" app:oui_wheelStartIndex="0" />
+        <com.obric.oui.picker.reels.views.WheelView android:id="@id/wv_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:oui_wheelCyclic="false" app:oui_wheelStartIndex="0" />
+        <com.obric.oui.picker.reels.views.WheelView android:id="@id/wv_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:oui_wheelCyclic="false" app:oui_wheelStartIndex="0" />
+    </LinearLayout>
+    <View android:background="@drawable/o_reel_picker_mask" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/wv_list" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/wv_list" />
+</merge>

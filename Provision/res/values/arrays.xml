@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="base_services_content">
+        <item>"You must agree to the 《Software Licensing Agreement》 and 《Privacy Policy》 to continue using the system. We will strictly abide by relevant laws and regulations and the Privacy Policy to protect your personal information.
+ During the device activation process, the following services will connect to the network: Cloud Services, Find Device, remoteprovisioner, Desktop Module, Wallpaper, Android System Webview, System Update Service (check for new versions and push update notifications), Permission Management Service, Battery and Performance, System Quality Monitoring, System Quality Service, AI Virtual Assistant, Basic Service Framework, System SDK, Comm. Svcs."</item>
+        <item>ProvisionAPP is a product that helps you complete the boot process, including basic service functions such as device activation and initialization.</item>
+        <item>"The system desktop service component is a product that provides you with basic service functions such as system desktop and system interface. In order to provide basic services, we need to connect to the Internet and call your following permissions: 
+ Take photos, read the phone book, make phone calls, record, and read the device's unique identifiable information (such as IMEI, device MAC address) to obtain device information such as the carrier name; 
+ Read and write media audio and video data (such as photos, videos, and audio), read the list of installed applications, scan Bluetooth, connect to Bluetooth, discover Bluetooth, and request notifications."</item>
+        <item>IMS service is a product that provides you with low-level communication basic service functions. In order to provide basic services, we need to connect to the internet and call your following permissions: shooting, reading device unique identifiable information (such as IMEI, device MAC address), reading and writing media audio and video data (such as photos, videos, and audio) for video call functions, as well as requesting notifications.</item>
+        <item>Phone Service is a product that provides you with basic Comm. Svcs. To provide basic services, we need to connect to the Internet and call the following permissions: read and edit call logs, read and edit phone books, access location information, record, read device unique identification information (such as IMEI, device MAC address), make calls, send text messages, receive and read text messages, scan Bluetooth, connect Bluetooth, and request notifications.</item>
+        <item>A camera is a product that provides you with basic services for taking photos and videos. In order to provide basic services, we need to connect to the internet and call your following permissions: shooting, recording, reading, and writing media audio and video data (such as photos, videos, and audio).</item>
+        <item>Album is a product that provides you with basic service functions for managing local pictures and videos, editing and beautifying pictures and videos. In order to provide basic services, we need to connect to the Internet and call your following permissions: read and write media audio and video data (such as photos, videos and audio) for storing, editing and displaying pictures and videos.</item>
+        <item>"The app package management component is a product that provides you with the basic service functions for installing third-party apps. To provide the basic services, we need to connect to the Internet and call the following permissions: read and write media audio and video data (such as photos, videos, and audio), access location information, read the device's unique identifiable information (such as IMEI and device MAC address), and read the list of installed apps for updating and installing the installed apps and confirming the information of the app that calls the app package management component."</item>
+        <item>The location-based service is a product that provides you with basic service functions based on location. In order to provide basic services, we need to connect to the Internet and call the following permissions: access to location information, reading of unique device identification information (such as IMEI, device MAC address), magnetic field sensor, rotation vector sensor, Bluetooth information, and accurate location information (GPS information) to obtain your accurate location information and provide a variety of location-based services.</item>
+        <item>"The Basic Service Framework is a product that provides you with basic services such as location-based service. To provide these services, we need to connect to the Internet and call the following permissions: recording, accessing location information in the foreground and background, reading the device's unique identifier (such as IMEI, device MAC address), reading and writing media audio and video data (such as photos, videos, and audio), reading the list of installed applications, requesting notifications, hardware serial number/Serial, IMSI, OAID, GPS, SSID, BSSID, Wi-Fi list, base station, IP Address, device sensor information, device information, application information, and network information."</item>
+        <item>System Update is a product that provides you with basic system update service functions. In order to provide basic services, we need to connect to the internet and call your following permissions: read device unique identifiable information (such as IMEI, device MAC address), read and write media audio and video data (such as photos, videos, and audio).</item>
+        <item>The system account is used to implement account registration, login, and management services. To implement this basic service, you need to connect to the Internet and call the following permissions: shooting, reading, and writing media audio and video data (such as photos, videos, and audio), reading SMS.</item>
+        <item>"SIM card activation is a product that provides you with a basic service function to ensure the normal operation of multiple system services by verifying the phone number information of the currently inserted SIM card. In order to provide basic services, we need to connect to the Internet and call the following permissions: read and edit call records, read and edit phone books, access location information, record, read the device's unique identifiable information (such as IMEI, device MAC address), verify the security of the login environment, make calls, send text messages, receive and read text messages, send and read activation text messages; scan Bluetooth, connect Bluetooth, and request notifications."</item>
+        <item>"System Bluetooth is a product that provides you with basic services for Bluetooth communication. To provide these basic services, we need to connect to the Internet and call the following permissions: read and edit call logs, read and edit phone books, access location information, receive and read text messages, read the device's unique identifier (such as IMEI, device MAC address), read and write media audio and video data (such as photos, videos, and audio), read the list of installed applications, scan Bluetooth, connect to Bluetooth, discover Bluetooth, and request notifications."</item>
+        <item>In order to provide a carrier service statement, we need to connect to the internet and invoke your following permissions: read and edit call records, read and edit phone books, access location information, record audio, read device unique identifiable information (such as IMEI, device MAC address), write media audio and video data (such as photos, videos, and audio), make calls, send text messages, receive and read text messages, scan Bluetooth, connect to Bluetooth, and request notifications.</item>
+        <item>"The permission management service is a product that provides you with the basic service functions of application permission management. In order to provide basic services, we need to connect to the Internet and call the following permissions: read the device's unique identifier information (such as IMEI, device MAC address), read the list of installed application software, and request notifications."</item>
+        <item>"Problem feedback is a product that provides you with basic feedback service functions. In order to provide basic services, we need to connect to the Internet and call the following permissions: read location information (get base station information), read the device's unique identifiable information (such as IMEI), read media audio and video data (such as photos, videos), send notifications, and list of installed applications."</item>
+        <item>Calendar Storage is a product that provides you with basic calendar storage and calendar management services. To provide basic services, we need to connect to the Internet and access your permissions: read and edit calendar information.</item>
+        <item>Calendar is a product that provides you with basic services for date viewing and schedule management. To provide these basic services, we need to connect to the Internet and call the following permissions: read and edit schedule information.</item>
+        <item>Battery and Power Saving is a product that provides you with basic power management, power consumption statistics, and power saving strategy basic service functions. In order to provide basic services, we need to connect to the Internet and call your following permissions: read and edit the phone book, receive and read text messages, read and write media audio and video data (such as photos, videos, and audio), read the list of installed applications, and send notifications.</item>
+        <item>"The system application statement is a product that provides you with basic service functions such as media data storage, reading, and system application interface display services. In order to provide basic services, we need to connect to the Internet and call the following permissions from you: 
+ Read and write media audio and video data (such as photos, videos and audio), read the list of installed applications, and request notifications."</item>
+        <item>"Mobile network service is a product that provides you with basic communication experience services. In order to provide basic services, we need to connect to the Internet and call the following permissions: access to location information, read the device's unique identifiable information (such as IMEI, device MAC address), read and write media audio and video data (such as photos, videos and audio)."</item>
+        <item>"The Find Device function helps you locate and lock your lost device and protect the data on it. To implement this function, your device will connect to the Internet and request the following permissions: make phone calls, connect to Bluetooth, read the device's unique identifier (such as IMSI/IMEI), read the phone number, and read location information. 
+ If you do not agree to our call for the above necessary permissions, this service will not work properly. To use this feature, you need to log in to your system account. Please read and agree to the 《System Account Service Privacy Policy》."</item>
+        <item>"TTpush is a product that provides you with basic push notification services. To provide these services, we need to connect to the Internet and request the following permissions: recording, accessing location information in the foreground and background, reading the device's unique identifier (such as IMEI and device MAC address), reading and writing media data (such as photos, videos, and audio), reading the list of installed applications, and requesting notifications.
+ When the user uses the location function, the location information is provided to the user on the mobile end point device"</item>
+    </string-array>
+    <string-array name="base_services_title">
+        <item>Terms of Service</item>
+        <item>ProvisionAPP</item>
+        <item>System Desktop Services Component</item>
+        <item>IMS Service</item>
+        <item>Telephone Service</item>
+        <item>Camera</item>
+        <item>Album</item>
+        <item>Application Package Management Component</item>
+        <item>Location-based Service</item>
+        <item>Basic Service Framework</item>
+        <item>System updates</item>
+        <item>System Account</item>
+        <item>SIM card activation</item>
+        <item>System Bluetooth</item>
+        <item>Operator Service Statement</item>
+        <item>Authority Management Service</item>
+        <item>QuestionFeedback</item>
+        <item>Calendar Storage</item>
+        <item>Calendar</item>
+        <item>Battery and Power Saving</item>
+        <item>System Application Declaration</item>
+        <item>Mobile Network Service</item>
+        <item>Find device declaration</item>
+        <item>TTpush Service Statement</item>
+    </string-array>
+    <string-array name="font_scale_values">
+        <item>0.875</item>
+        <item>1.0</item>
+        <item>1.125</item>
+        <item>1.25</item>
+        <item>1.5</item>
+    </string-array>
+    <string-array name="one_wheel_entries">
+        <item>🧜️</item>
+        <item>🧜🏻️</item>
+        <item>🧜🏼️</item>
+        <item>🧜🏽️</item>
+        <item>🧜🏾️</item>
+        <item>🧜🏿️️</item>
+    </string-array>
+    <string-array name="week_day_labels">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </string-array>
+</resources>

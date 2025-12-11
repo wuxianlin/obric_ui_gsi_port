@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:paddingBottom="@dimen/oui_p_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/oui_p_dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.button.OButton android:gravity="center" android:id="@id/actionNegative" android:visibility="gone" android:layout_width="0.0dip" android:lines="1" app:layout_constraintEnd_toStartOf="@id/actionPositive" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/OButton.L1.Standard.Neutral" />
+    <com.obric.oui.button.OButton android:gravity="center" android:id="@id/actionPositive" android:layout_width="0.0dip" android:lines="1" android:layout_marginStart="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/actionNegative" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="0.0dip" style="@style/OButton.L1.Standard.Primary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

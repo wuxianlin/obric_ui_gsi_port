@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="28.0dip" android:width="29.599976dip" android:viewportWidth="29.6" android:viewportHeight="28.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0 0H29.6V28.0H0V0Z" />
+        <group android:pivotX="14.8" android:pivotY="14.0" android:scaleX="1.969" android:scaleY="1.969" android:rotation="90.0" android:translateX="0.5" android:translateY="0.016">
+            <path android:fillColor="@drawable/$o_reel_picker_mask__0" android:pathData="M0 0V28.0H29.6V0" />
+        </group>
+    </group>
+</vector>

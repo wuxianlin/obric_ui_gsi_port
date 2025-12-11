@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.obric.oui.layout.OUIFrameLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:oui_radius="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dip" android:layout_marginVertical="12.0dip">
+        <com.obric.oui.text.OTextView android:textColor="@color/oui_basic_text_1" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="标题" style="@style/Title_Title_M" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <com.android.provision.widget.expandabletextviewlibrary.ExpandableTextView android:textColor="@color/oui_basic_text_3" android:id="@id/ep_01" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ep_contract_color="@color/Transparent" app:ep_expand_color="@color/Transparent" app:ep_link_color="@color/oui_b_blue_7" app:ep_max_line="3" app:ep_mention_color="@color/oui_b_blue_7" app:ep_need_always_showright="true" app:ep_need_contract="true" app:ep_need_convert_url="false" app:ep_need_expand="true" app:ep_need_mention="true" app:ep_self_color="@color/oui_b_blue_7" style="@style/Label_M_Thin" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/btnToggle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/expand_icon" android:layout_marginEnd="10.0dip" />
+</com.obric.oui.layout.OUIFrameLayout>

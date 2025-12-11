@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.obric.oui.dialog.alert.view.RadiusLayout android:id="@id/root_constraint" android:background="@color/oui_bg_base_2_1_low_elevation" android:layout_width="@dimen/oui_w_sheet" android:layout_height="wrap_content" app:oui_cornerRadiusLeftTop="@dimen/oui_r_xl2__sheet" app:oui_cornerRadiusRightTop="@dimen/oui_r_xl2__sheet"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.obric.oui.sheet.OSheetContentFrameLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/oui_p_container_tiny_2" />
+        <FrameLayout android:id="@id/foot_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.obric.oui.dialog.alert.view.RadiusLayout>

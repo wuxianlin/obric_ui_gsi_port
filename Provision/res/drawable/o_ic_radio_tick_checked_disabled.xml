@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/ic_s_s_checkmark_outlined_20" android:tint="@color/oui_accent_7" android:alpha="0.34"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

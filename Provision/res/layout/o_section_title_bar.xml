@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.text.OTextView android:textColor="@color/oui_text_3" android:layout_gravity="center_vertical" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iconImageView" android:layout_width="32.0dip" android:layout_height="fill_parent" android:layout_marginEnd="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.obric.oui.badge.OBadgeView android:id="@id/numberBadgeView" android:layout_marginEnd="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/OBadgeView.S2.Number.Red" />
+        <com.obric.oui.text.OTextView android:textSize="12.0sp" android:textColor="@color/oui_text_3" android:id="@id/numberTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

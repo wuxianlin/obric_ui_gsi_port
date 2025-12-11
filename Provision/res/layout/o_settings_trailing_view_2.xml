@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/trailingImage" android:layout_centerVertical="true">
+        <com.obric.oui.text.OTextView android:textSize="14.0sp" android:textColor="@color/oui_text_3" android:ellipsize="end" android:layout_gravity="center|right" android:id="@id/trailingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </FrameLayout>
+    <ImageView android:id="@id/trailingImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

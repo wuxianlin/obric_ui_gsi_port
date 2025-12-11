@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/action_sheet_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_container" layout="@layout/o_extension_action_sheet" />
+    <LinearLayout android:orientation="vertical" android:id="@id/action_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/divider_view" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <com.obric.oui.text.OTextView android:gravity="center" android:id="@id/cancel_action" android:background="?selectableItemBackground" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="取消" app:oui_textSpec="H3" />
+</LinearLayout>

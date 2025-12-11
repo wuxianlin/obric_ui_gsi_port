@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.obric.oui.button.OButton android:visibility="visible" app:icon="@drawable/o_ic_titlebar_close" app:iconTint="@color/oui_text_2" style="@style/OButton.M1.Trans.Neutral"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

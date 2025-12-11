@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/fl_left_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oui_title_bar_padding" android:layout_marginStart="@dimen/oui_title_bar_padding" />
+    <FrameLayout android:layout_gravity="end" android:id="@id/fl_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oui_title_bar_padding" android:layout_marginEnd="@dimen/oui_title_bar_padding" />
+    <com.obric.oui.text.OBaseTextView android:textStyle="bold" android:textColor="@color/oui_text_1" android:ellipsize="end" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/tv_title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="92.0dip" android:maxWidth="360.0dip" android:maxLines="1" android:paddingHorizontal="8.0dip" />
+    <com.obric.oui.text.OBaseTextView android:id="@id/tv_subtitle_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/fl_bottom_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.obric.oui.divider.ODivider android:layout_gravity="bottom" android:id="@id/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="16.0dip" android:paddingTop="48.0dip" android:paddingRight="16.0dip" android:paddingBottom="150.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.layout.OUILinearLayout android:orientation="vertical" android:background="@drawable/permission_window_background" android:paddingLeft="@dimen/oui_p_container_3" android:paddingTop="@dimen/oui_p_container_2" android:paddingRight="@dimen/oui_p_container_3" android:paddingBottom="@dimen/oui_p_container_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/shadows_3_3_high_elevation">
+        <com.obric.oui.text.OBaseTextView android:textColor="@color/oui_text_1" android:ellipsize="end" android:id="@id/permission_window_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Title_Title_M" />
+        <com.obric.oui.text.OBaseTextView android:textColor="@color/oui_text_2" android:ellipsize="end" android:id="@id/permission_window_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="3" style="@style/Body_M" />
+    </com.obric.oui.layout.OUILinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

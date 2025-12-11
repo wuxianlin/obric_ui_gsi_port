@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.avatar.OAvatar android:id="@id/avatar1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.obric.oui.avatar.OAvatar android:id="@id/avatar2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/avatar1" app:layout_constraintTop_toTopOf="parent" />
+    <com.obric.oui.avatar.OAvatar android:id="@id/avatar3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/avatar2" app:layout_constraintTop_toTopOf="parent" />
+    <com.obric.oui.avatar.OAvatar android:id="@id/avatar4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/avatar3" app:layout_constraintTop_toTopOf="parent" />
+    <com.obric.oui.avatar.OAvatar android:id="@id/avatar5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/avatar4" app:layout_constraintTop_toTopOf="parent" />
+</merge>

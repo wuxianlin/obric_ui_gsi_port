@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/previous" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/oui_mcv_arrow_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/oui_mcv_arrow_margin" android:contentDescription="@string/oui_previous" app:srcCompat="@drawable/o_ic_mcv_action_previous" />
+    <com.obric.oui.text.OBaseTextView android:gravity="center" android:layout_gravity="center" android:id="@id/month_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:textAppearanceMedium" />
+    <ImageButton android:id="@id/next" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/oui_mcv_arrow_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/oui_mcv_arrow_margin" android:contentDescription="@string/oui_next" app:srcCompat="@drawable/o_ic_mcv_action_next" />
+</LinearLayout>

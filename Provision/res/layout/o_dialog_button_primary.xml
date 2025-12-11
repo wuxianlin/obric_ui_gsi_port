@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.button.OButton android:gravity="center" android:id="@id/actionPositive" android:layout_width="fill_parent" android:layout_marginBottom="12.0dip" android:lines="1" android:layout_marginStart="@dimen/oui_p_dialog" android:layout_marginEnd="@dimen/oui_p_dialog" app:layout_constraintBottom_toTopOf="@id/bottom_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginBottom="@dimen/oui_p_dialog" style="@style/OButton.L1.Standard.Primary" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/actionPositive">
+        <com.obric.oui.button.OButton android:textSize="15.0sp" android:textColor="@color/TextReverse3" android:gravity="center" android:id="@id/actionNegative" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="18.0dip" android:lines="1" style="@style/OButton.Text.Primary.Small" />
+        <FrameLayout android:id="@id/custom_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

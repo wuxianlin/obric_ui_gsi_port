@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="328.0dip" android:viewportWidth="328.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffffffff" android:pathData="M20,1H308C318.49,1 327,9.51 327,20C327,30.49 318.49,39 308,39H20C9.51,39 1,30.49 1,20C1,9.51 9.51,1 20,1Z" />
+    <path android:fillColor="#00000000" android:pathData="M20,1H308C318.49,1 327,9.51 327,20C327,30.49 318.49,39 308,39H20C9.51,39 1,30.49 1,20C1,9.51 9.51,1 20,1Z" android:strokeColor="@drawable/$bg_searchbar__0" android:strokeWidth="2.0" />
+</vector>

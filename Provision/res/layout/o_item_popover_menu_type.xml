@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.obric.oui.popover.menu.PopoverMenuLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_container" android:paddingLeft="@dimen/oui_p_list_item_1" android:paddingRight="@dimen/oui_g_list_item_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_popover_action" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="@dimen/oui_p_list_item_1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.obric.oui.text.OTextView android:textColor="@color/oui_text_1" android:ellipsize="end" android:id="@id/tv_popover_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Title_Title_M" />
+            <com.obric.oui.text.OTextView android:textColor="@color/oui_text_3" android:ellipsize="end" android:id="@id/tv_popover_action_sub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" style="@style/Label_M_Thin" />
+        </LinearLayout>
+        <com.obric.oui.text.OTextView android:textColor="@color/oui_text_3" android:ellipsize="end" android:id="@id/tv_popover_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4.0dip" style="@style/Label_L" />
+        <ImageView android:id="@id/iv_popover_tail_image" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+    </LinearLayout>
+</com.obric.oui.popover.menu.PopoverMenuLinearLayout>

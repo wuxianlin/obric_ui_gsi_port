@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip" android:paddingVertical="12.0dip">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_leading_element" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="44.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_weight="1.0">
+            <com.obric.oui.text.OTextView android:textColor="@color/oui_text_1" android:gravity="center" android:id="@id/tv_content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="44.0dip" style="@style/Title_Title_M" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_trailing_element" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="44.0dip" />
+    </LinearLayout>
+    <com.obric.oui.divider.ODivider android:layout_gravity="bottom" android:id="@id/divider_view" android:layout_width="fill_parent" android:layout_height="1.0dip" app:oui_dividerStyle="primary" />
+</LinearLayout>

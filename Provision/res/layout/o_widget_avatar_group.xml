@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="60.0dip" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/under_left_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.33" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/top_right_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.66" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/under_bottom_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.66" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/top_top_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.33" />
+    <com.obric.oui.avatar.OAvatar android:id="@id/under_avatar" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/under_bottom_guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/under_left_guideline" app:layout_constraintTop_toTopOf="parent" />
+    <com.obric.oui.avatar.OAvatar android:id="@id/top_avatar" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/top_right_guideline" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/top_top_guideline" />
+</merge>

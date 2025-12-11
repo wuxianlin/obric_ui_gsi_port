@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:paddingBottom="4.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.obric.oui.lisitem.OListItemSwitch android:id="@id/item_switch" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/assistant_img" android:layout_width="328.0dip" android:layout_height="284.0dip" android:src="@drawable/assistant_voice_trigger" android:scaleType="centerInside" />
+    <com.obric.oui.text.OTextView android:textColor="@color/oui_text_1" android:gravity="center_horizontal" android:id="@id/assistant_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/app_name" android:singleLine="true" android:layout_marginHorizontal="16.0dip" style="@style/Title_Title_M" />
+    <FrameLayout android:id="@id/assistant_subtitle_container" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginHorizontal="32.0dip">
+        <com.obric.oui.text.OTextView android:textColor="@color/oui_text_3" android:gravity="center_horizontal" android:layout_gravity="top" android:id="@id/assistant_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assistant_subtitle_0" android:maxLines="2" style="@style/Label_M_Thin" />
+    </FrameLayout>
+</LinearLayout>

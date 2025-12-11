@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.checkbox.OCheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:oui_checkBoxAlwaysLight="true" />
+    <com.obric.oui.text.OTextView android:textColor="#99161823" android:id="@id/checkbox_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/oui_not_show_hint" android:layout_marginStart="4.0dip" />
+</LinearLayout>

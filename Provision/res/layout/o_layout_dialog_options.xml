@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/click_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:layout_marginEnd="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_normal" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.obric.oui.checkbox.OCheckBox android:id="@id/radio" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:oui_checkBoxAlwaysLight="true" app:oui_checkBoxShape="circle" app:oui_radioStyle="round" />
+        </RelativeLayout>
+        <com.obric.oui.text.OTextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/tv_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已阅读并同意" android:layout_marginStart="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_link" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toEndOf="@id/radio" app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout android:id="@id/link_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toEndOf="@id/tv_normal" app:layout_constraintTop_toTopOf="parent">
+            <com.obric.oui.text.OTextView android:textSize="14.0sp" android:textColor="@color/Link3" android:layout_gravity="center_vertical" android:id="@id/tv_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户协议" android:layout_marginStart="2.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

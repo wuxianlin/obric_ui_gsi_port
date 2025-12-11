@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.obric.oui.toast.ToastBackgroundView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/toast_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:paddingHorizontal="8.0dip">
+        <com.obric.oui.progress.ODownloadProgressView android:id="@id/toast_progress" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="4.0dip" />
+        <ImageView android:id="@id/iv_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="4.0dip" android:includeFontPadding="false" />
+        <com.obric.oui.text.OBaseTextView android:textColor="@color/ToastTextColor" android:ellipsize="end" android:id="@id/tv_msg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="288.0dip" android:maxLines="3" android:layout_weight="1.0" android:layout_marginHorizontal="12.0dip" android:paddingVertical="12.0dip" style="@style/Label_M_Thin" />
+        <com.obric.oui.button.OButton android:id="@id/right_button" android:visibility="gone" android:layout_width="wrap_content" style="@style/OButton.M1.Standard.Neutral.White" />
+    </LinearLayout>
+</com.obric.oui.toast.ToastBackgroundView>

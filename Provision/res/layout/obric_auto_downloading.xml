@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.progress.OProgressView android:id="@id/auto_progressbar" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:oui_progress="0" app:oui_progress_view_style="normal" />
+    <com.obric.oui.text.OTextView android:textSize="12.5dip" android:textColor="@color/oui_text_3" android:gravity="center_vertical" android:id="@id/auto_progress_des" android:layout_width="wrap_content" android:layout_height="16.0dip" android:text="@string/obric_auto_progress_des" android:layout_below="@id/auto_progressbar" android:layout_alignParentStart="true" android:lineHeight="16.0sp" />
+    <com.obric.oui.text.OTextView android:textSize="12.5dip" android:textColor="@color/oui_text_3" android:gravity="center_vertical" android:id="@id/auto_downloading_percent" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_below="@id/auto_progressbar" android:layout_marginStart="20.0dip" android:layout_alignParentEnd="true" android:lineHeight="22.0sp" />
+</RelativeLayout>

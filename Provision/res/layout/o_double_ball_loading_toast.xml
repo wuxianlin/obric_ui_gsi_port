@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root_view" android:background="@drawable/o_bg_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/o_popup_toast_layout">
+        <com.obric.oui.text.OBaseTextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="加载中" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/close_btn" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/root_view" android:layout_alignEnd="@id/root_view">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:cropToPadding="true" app:srcCompat="@drawable/ic_s_s_xmark_outlined_12" app:tint="@color/ConstTextInverse5" />
+    </RelativeLayout>
+</RelativeLayout>

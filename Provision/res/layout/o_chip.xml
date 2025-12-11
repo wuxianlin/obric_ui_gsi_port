@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/oui_p_container_tiny_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.obric.oui.text.OBaseTextView android:gravity="center" android:id="@id/chip_text" android:layout_width="fill_parent" android:layout_height="20.0dip" android:maxLines="1" android:includeFontPadding="false" style="@style/BtnLabel_M1" />
+    <ImageView android:id="@id/close_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+</LinearLayout>

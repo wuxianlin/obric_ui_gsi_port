@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbarThumbVertical="@drawable/o_bg_scrollbar_track" android:scrollbarStyle="outsideInset" android:id="@id/scrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_marginEnd="6.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="350.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.obric.oui.text.OTextView android:textColor="@color/oui_text_2" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/oui_p_container_3" android:paddingEnd="14.0dip" style="@style/Body_M" />
+    </ScrollView>
+</merge>

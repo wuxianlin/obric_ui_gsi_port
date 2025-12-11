@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/o_bg_round_full" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.obric.oui.text.OBaseTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff040a1a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+    <com.obric.oui.text.OBaseTextView android:textSize="16.0sp" android:textColor="#ff6d717a" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <com.obric.oui.text.OBaseTextView android:textSize="16.0dip" android:textColor="#ff040a1a" android:gravity="center" android:id="@id/cancel" android:background="@drawable/o_bg_bt_cancel_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textFontWeight="400" />
+        <View android:layout_gravity="center_horizontal" android:layout_width="16.0dip" android:layout_height="fill_parent" />
+        <com.obric.oui.text.OBaseTextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/confirm" android:background="@drawable/o_bg_bt_confirm_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textFontWeight="400" />
+    </LinearLayout>
+</LinearLayout>

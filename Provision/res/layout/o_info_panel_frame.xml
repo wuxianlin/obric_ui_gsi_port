@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="290.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.dialog.alert.view.RadiusLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_illustration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </com.obric.oui.dialog.alert.view.RadiusLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header_container">
+        <com.obric.oui.text.OTextView android:textStyle="bold" android:textColor="@color/TextReverse" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:oui_textSpec="H3S" />
+        <androidx.core.widget.NestedScrollView android:scrollbarThumbVertical="@drawable/o_scrollbar" android:id="@id/desc_container" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.obric.oui.text.OTextView android:textSize="14.0sp" android:textColor="@color/TextReverse2" android:gravity="center" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@id/custom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

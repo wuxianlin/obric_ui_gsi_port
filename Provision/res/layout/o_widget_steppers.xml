@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/decrease_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/oui_stepper_decrease_desc" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.obric.oui.button.OButton android:gravity="center" android:id="@id/tv_dec" android:background="@null" android:clickable="true" android:layout_width="@dimen/oui_w_button_icon_m1" app:icon="@drawable/o_ic_minus" app:oui_radius="8.0dip" style="@style/OButton.M1.Standard.Neutral" />
+    </FrameLayout>
+    <EditText android:textStyle="bold" android:textColor="@color/oui_text_1" android:gravity="center" android:id="@id/et_counter" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" android:textCursorDrawable="@drawable/o_bg_steppers_cursor" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/increase_container" app:layout_constraintStart_toEndOf="@id/decrease_container" app:layout_constraintTop_toTopOf="parent" style="@style/Title_Title_M_Thin" />
+    <FrameLayout android:id="@id/increase_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/oui_stepper_add_desc" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.obric.oui.button.OButton android:gravity="center" android:id="@id/tv_add" android:background="@null" android:clickable="true" android:layout_width="@dimen/oui_w_button_icon_m1" app:icon="@drawable/o_ic_plus" app:oui_radius="8.0dip" style="@style/OButton.M1.Standard.Neutral" />
+    </FrameLayout>
+</merge>

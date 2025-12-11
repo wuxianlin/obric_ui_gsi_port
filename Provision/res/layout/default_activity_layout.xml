@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.obric.oui.button.OButton android:layout_width="200.0dip" android:layout_margin="12.0dip" android:text="@string/activity_default" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/OButton.L1.Trans.Neutral" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.obric.oui.button.OButton android:id="@id/accessibility_btn" android:layout_width="200.0dip" android:layout_marginBottom="12.0dip" android:text="@string/accessibility" style="@style/OButton.L1.Standard.Primary" />
+        <com.obric.oui.button.OButton android:id="@id/next_btn" android:layout_width="200.0dip" android:layout_marginBottom="12.0dip" android:text="@string/oui_next" style="@style/OButton.L1.Standard.Primary" />
+    </LinearLayout>
+    <TextView android:id="@id/factory_info" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="100.0dip" android:layout_marginRight="100.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

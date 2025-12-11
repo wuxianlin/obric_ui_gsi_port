@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/o_index_popup_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/popup_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.obric.oui.text.OBaseTextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/popup_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Title_Title_L_Alt" />
+</LinearLayout>

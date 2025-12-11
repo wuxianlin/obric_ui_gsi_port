@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.layout.OUILinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="12.0dip" app:oui_radius="16.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.obric.oui.text.OTextView android:textColor="@color/oui_text_1" android:ellipsize="end" android:id="@id/tv_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@id/trailing_text" android:layout_alignParentStart="true" style="@style/Title_Title_M" />
+            <TextView android:textSize="12.5sp" android:textColor="@color/oui_b_blue_7" android:ellipsize="end" android:gravity="end" android:id="@id/trailing_text" android:layout_width="60.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="4.0dip" android:lineHeight="16.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="12.5sp" android:textColor="@color/oui_text_3" android:id="@id/tv_content_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lineHeight="16.0dip" />
+    </com.obric.oui.layout.OUILinearLayout>
+</merge>

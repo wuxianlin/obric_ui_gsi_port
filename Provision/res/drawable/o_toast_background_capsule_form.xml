@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/ic_smoothcorner_capsule_24" android:tint="@color/oui_fill_toast_tooltip" />
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="24.0dip" />
+            <stroke android:width="1.0px" android:color="@color/LineTertiary" />
+        </shape>
+    </item>
+</layer-list>

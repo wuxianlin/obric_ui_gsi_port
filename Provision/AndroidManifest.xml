@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.android.provision" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <original-package android:name="com.android.provision"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS"/>
+    <uses-permission android:name="android.permission.REMOVE_TASKS"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="com.obric.permission.FIND_DEVICE"/>
+    <uses-permission android:name="com.obric.assist.permission.ENABLE_DISABLE_ASSIST"/>
+    <permission android:name="com.android.provision.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.provision.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <permission android:name="com.android.provision.ACCESS_PROVISION_ACTIVITY_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.provision.ACCESS_PROVISION_ACTIVITY_PERMISSION"/>
+    <uses-permission android:name="com.android.settings.ACCESS_PROVISION_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC_INTERNAL"/>
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="com.obric.account.permission.PHONE_SETUP"/>
+    <uses-permission android:name="com.obric.cloudservice.permission.PHONE_SETUP"/>
+    <uses-permission android:name="com.obric.updater.RECEIVE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.obric.account.NAVIGATE"/>
+    <uses-permission android:name="com.obric.matrix.permission.RECEIVE_SETTINGS_UPDATE"/>
+    <uses-permission android:name="com.obric.matrix.dataanalysis.permission.USE_DATA_SERVICE"/>
+    <queries>
+        <package android:name="com.obric.matrix"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.slardaros.METRIC_EVENT_PERMISSION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.obric.olog.ACCESS_LOG_COMPRESSION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:label="@string/app_name" android:name="com.android.provision.ProvisionApplication" android:theme="@style/Theme.Provision">
+        <activity android:exported="false" android:name="com.android.provision.ServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.android.provision.AssistantActivity" android:permission="com.android.provision.ACCESS_PROVISION_ACTIVITY_PERMISSION" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="true" android:name="com.android.provision.ActivateBridgeActivity" android:permission="com.android.provision.ACCESS_PROVISION_ACTIVITY_PERMISSION" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.android.provision.license.LicenseActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.android.provision.DefaultActivity" android:screenOrientation="portrait">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.SETUP_WIZARD"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.android.provision.CompletedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.android.provision.license.UserAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.PrivacyAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.AccountAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.UnifiedAccountAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.AccountCancellationAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.UdfpsUnlockAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.FaceUnlockAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.android.provision.license.ThirdPartListAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.android.provision.activate.ActivateActivity2" android:permission="com.android.provision.ACCESS_PROVISION_ACTIVITY_PERMISSION" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.android.provision.activate.ActivateService"/>
+        <provider android:authorities="com.obric.matrix.platform.sdk.ones.provider.com.android.provision" android:enabled="true" android:exported="true" android:name="com.obric.matrix.platform.sdk.ones.ws.WsMsgProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="com.obric.olog.ConfigService">
+            <intent-filter>
+                <action android:name="com.obric.ologaction"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.android.provision.contextprovider" android:exported="false" android:name="com.obric.olog.OLog"/>
+        <service android:exported="false" android:name="com.bytedance.common.wschannel.server.WsChannelService" android:process=":push" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.bytedance.common.wschannel.client.WsClientService" android:stopWithTask="true"/>
+        <provider android:authorities="com.android.provision.WsChannelMultiProcessSharedProvider" android:exported="false" android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider"/>
+        <activity android:exported="true" android:name="com.obric.oui.window.permission.PrivacyStatementActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:exported="true" android:name="com.obric.oui.window.permission.WebViewActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <provider android:authorities="com.android.provision.logcompressionprovider" android:exported="true" android:name="com.obric.olog.salvage.LogCompressionProvider"/>
+        <provider android:authorities="com.android.provision.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

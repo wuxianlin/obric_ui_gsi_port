@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="@dimen/oui_p_sheet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/oui_p_sheet"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.button.OButton android:id="@id/btn_negative" android:layout_width="0.0dip" android:layout_height="@dimen/oui_h_l1" android:layout_weight="1.0" app:cornerRadius="@dimen/oui_r_m2_rect" app:layout_constraintEnd_toStartOf="@id/btn_positive" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintTop_toTopOf="parent" style="@style/OButton.L1.Standard.Neutral" />
+    <View android:id="@id/horizontal_space" android:layout_width="12.0dip" android:layout_height="fill_parent" />
+    <com.obric.oui.button.OButton android:id="@id/btn_positive" android:layout_width="0.0dip" android:layout_height="@dimen/oui_h_l1" android:layout_weight="1.0" app:cornerRadius="@dimen/oui_r_m2_rect" style="@style/OButton.L1.Standard.Primary" />
+</LinearLayout>

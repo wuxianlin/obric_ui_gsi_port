@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.obric.oui.progress.ODownloadProgressView android:layout_gravity="center_vertical" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:oui_progress_view_size="small" />
+    <com.obric.oui.text.OBaseTextView android:textColor="@color/oui_text_3b" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" style="@style/Title_Title_L" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="48.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="56.0sp" android:textStyle="normal" android:textColor="@color/oui_text_1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="142.0dip" android:text="@string/os_name" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="Ola Sans Compact" android:lineHeight="56.0dip" android:textFontWeight="500" />
+    <ImageView android:id="@id/swipe_up_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:src="@drawable/ic_swipe_up_60_60" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/dragging_view" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>
