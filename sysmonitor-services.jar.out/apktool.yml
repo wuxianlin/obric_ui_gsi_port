@@ -1,0 +1,19 @@
+version: 2.11.1
+apkFileName: sysmonitor-services.jar
+isFrameworkApk: false
+usesFramework:
+  ids:
+  tag: null
+sdkInfo:
+  minSdkVersion: 29
+packageInfo:
+  forcedPackageId: null
+  renameManifestPackage: null
+versionInfo:
+  versionCode: null
+  versionName: null
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- dex
