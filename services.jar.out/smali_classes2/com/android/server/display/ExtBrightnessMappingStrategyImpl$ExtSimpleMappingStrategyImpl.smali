@@ -88,8 +88,16 @@
     .param p4, "rawBrightness"    # [F
 
     .line 66
+    if-nez p3, :cond_wxl
+
+    const/4 v0, 0x0
+
+    goto :goto_wxl
+
+    :cond_wxl
     array-length v0, p3
 
+    :goto_wxl
     .line 67
     .local v0, "N":I
     new-array v1, v0, [F
