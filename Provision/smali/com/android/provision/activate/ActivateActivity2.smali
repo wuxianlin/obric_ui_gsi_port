@@ -1081,7 +1081,7 @@
     .line 467
     invoke-static {v0, v1}, Lcom/obric/olog/OLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 468
     invoke-direct {p0, v0}, Lcom/android/provision/activate/ActivateActivity2;->sendResult(Z)V
