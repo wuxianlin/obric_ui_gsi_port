@@ -115,7 +115,7 @@
 
 # virtual methods
 .method public calculate(J)Lcom/android/server/power/teardown/hwteardown/GpuTeardownResult;
-    .locals 8
+    .locals 10
     .param p1, "duration"    # J
 
     .line 31
@@ -147,10 +147,20 @@
     .line 37
     if-eqz p0, :goto_wxl
     iget-object v4, p0, Lcom/android/server/power/teardown/hwteardown/GpuTeardown;->mCurGpuClockStat:[J
+    if-eqz v4, :goto_wxl
+    array-length v8, v4
+    const/4 v9, 0x1
+    sub-int v8,v8,v9
+    if-lt v8, v3, :goto_wxl
 
     aget-wide v4, v4, v3
 
     iget-object v6, p0, Lcom/android/server/power/teardown/hwteardown/GpuTeardown;->mBaseGpuClockStat:[J
+    if-eqz v6, :goto_wxl
+    array-length v8, v6
+    const/4 v9, 0x1
+    sub-int v8,v8,v9
+    if-lt v8, v3, :goto_wxl
 
     aget-wide v6, v6, v3
 
