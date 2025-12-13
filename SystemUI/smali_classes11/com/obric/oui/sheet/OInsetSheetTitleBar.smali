@@ -1,0 +1,1801 @@
+.class public Lcom/obric/oui/sheet/OInsetSheetTitleBar;
+.super Landroid/widget/FrameLayout;
+.source "OInsetSheetTitleBar.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;,
+        Lcom/obric/oui/sheet/OInsetSheetTitleBar$Companion;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u001a\u0008\u0016\u0018\u0000 i2\u00020\u0001:\u0002ijB%\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u000e\u0010C\u001a\u00020D2\u0006\u0010E\u001a\u00020\u0007J\u0016\u0010F\u001a\u00020\u001f2\u0006\u0010G\u001a\u00020\u00072\u0006\u0010H\u001a\u00020\u0007J\u000e\u0010I\u001a\u00020D2\u0006\u0010E\u001a\u00020\u0007J\u000e\u0010J\u001a\u00020\u001f2\u0006\u0010E\u001a\u00020\u0007J\u000e\u0010K\u001a\u00020L2\u0006\u0010M\u001a\u00020NJ\u001e\u0010O\u001a\u00020\u001f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010P\u001a\u00020Q2\u0006\u0010R\u001a\u00020\u0007J\u0016\u0010S\u001a\u00020\u001f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010P\u001a\u00020QJ\u0016\u0010T\u001a\u00020\u001f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010P\u001a\u00020QJ\u0016\u0010U\u001a\u00020\u001f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010P\u001a\u00020QJ\u0016\u0010V\u001a\u00020\u001f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010P\u001a\u00020QJ\u0006\u0010W\u001a\u00020\u0016J\u0010\u0010X\u001a\u00020L2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002J\u0010\u0010Y\u001a\u00020L2\u0006\u0010\u0004\u001a\u00020\u0005H\u0002J0\u0010Z\u001a\u00020L2\u0006\u0010[\u001a\u0002072\u0006\u0010\\\u001a\u00020\u00072\u0006\u0010]\u001a\u00020\u00072\u0006\u0010^\u001a\u00020\u00072\u0006\u0010_\u001a\u00020\u0007H\u0014J\u0018\u0010`\u001a\u00020L2\u0006\u0010a\u001a\u00020\u00072\u0006\u0010b\u001a\u00020\u0007H\u0014J\u0006\u0010c\u001a\u00020LJ\u0006\u0010d\u001a\u00020LJ\u000e\u0010e\u001a\u00020L2\u0006\u0010f\u001a\u00020\u0007J\u000e\u0010e\u001a\u00020L2\u0006\u0010g\u001a\u00020\nJ\u0006\u0010h\u001a\u00020LR(\u0010\u000b\u001a\u0004\u0018\u00010\n2\u0008\u0010\t\u001a\u0004\u0018\u00010\n@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0001X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0001X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0016X\u0082.\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0019\u001a\u00020\u0001X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u0012\"\u0004\u0008\u001b\u0010\u0014R\u000e\u0010\u001c\u001a\u00020\u0016X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0016X\u0082.\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u001e\u001a\u00020\u001fX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u001a\u0010$\u001a\u00020%X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008&\u0010\'\"\u0004\u0008(\u0010)R\u000e\u0010*\u001a\u00020\u0016X\u0082.\u00a2\u0006\u0002\n\u0000R\u001a\u0010+\u001a\u00020%X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008,\u0010\'\"\u0004\u0008-\u0010)R$\u0010/\u001a\u00020.2\u0006\u0010\t\u001a\u00020.@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00080\u00101\"\u0004\u00082\u00103R\u0011\u00104\u001a\u00020\u00168F\u00a2\u0006\u0006\u001a\u0004\u00085\u00106R$\u00108\u001a\u0002072\u0006\u0010\t\u001a\u000207@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00089\u0010:\"\u0004\u0008;\u0010<R(\u0010=\u001a\u0004\u0018\u00010\n2\u0008\u0010\t\u001a\u0004\u0018\u00010\n@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008>\u0010\r\"\u0004\u0008?\u0010\u000fR(\u0010@\u001a\u0004\u0018\u00010\n2\u0008\u0010\t\u001a\u0004\u0018\u00010\n@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008A\u0010\r\"\u0004\u0008B\u0010\u000f\u00a8\u0006k"
+    }
+    d2 = {
+        "Lcom/obric/oui/sheet/OInsetSheetTitleBar;",
+        "Landroid/widget/FrameLayout;",
+        "context",
+        "Landroid/content/Context;",
+        "attrs",
+        "Landroid/util/AttributeSet;",
+        "defStyleAttr",
+        "",
+        "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
+        "value",
+        "",
+        "desText",
+        "getDesText",
+        "()Ljava/lang/String;",
+        "setDesText",
+        "(Ljava/lang/String;)V",
+        "mCenterContainer",
+        "getMCenterContainer",
+        "()Landroid/widget/FrameLayout;",
+        "setMCenterContainer",
+        "(Landroid/widget/FrameLayout;)V",
+        "mCenterTitleView",
+        "Landroid/widget/TextView;",
+        "mDesContainerView",
+        "mDesTextView",
+        "mFixedCenterContainer",
+        "getMFixedCenterContainer",
+        "setMFixedCenterContainer",
+        "mFixedCenterSubTitleView",
+        "mFixedCenterTitleView",
+        "mLeftActionBack",
+        "Lcom/obric/oui/button/OButton;",
+        "getMLeftActionBack",
+        "()Lcom/obric/oui/button/OButton;",
+        "setMLeftActionBack",
+        "(Lcom/obric/oui/button/OButton;)V",
+        "mLeftContainer",
+        "Landroid/widget/LinearLayout;",
+        "getMLeftContainer",
+        "()Landroid/widget/LinearLayout;",
+        "setMLeftContainer",
+        "(Landroid/widget/LinearLayout;)V",
+        "mLeftTitleView",
+        "mRightContainer",
+        "getMRightContainer",
+        "setMRightContainer",
+        "Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;",
+        "mTitlePosition",
+        "getMTitlePosition",
+        "()Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;",
+        "setMTitlePosition",
+        "(Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;)V",
+        "mTitleView",
+        "getMTitleView",
+        "()Landroid/widget/TextView;",
+        "",
+        "showLeftBack",
+        "getShowLeftBack",
+        "()Z",
+        "setShowLeftBack",
+        "(Z)V",
+        "subTitleText",
+        "getSubTitleText",
+        "setSubTitleText",
+        "titleText",
+        "getTitleText",
+        "setTitleText",
+        "addLeftImageView",
+        "Landroid/widget/ImageView;",
+        "drawableId",
+        "addRightButton",
+        "style",
+        "stringId",
+        "addRightImageView",
+        "addRightTransButton",
+        "addRightView",
+        "",
+        "view",
+        "Landroid/view/View;",
+        "createButton",
+        "root",
+        "Landroid/view/ViewGroup;",
+        "layoutResId",
+        "createNeutralButton",
+        "createPrimaryLightButton",
+        "createTransButton",
+        "createUnderstatedButton",
+        "getTitleView",
+        "init",
+        "initAttrs",
+        "onLayout",
+        "changed",
+        "left",
+        "top",
+        "right",
+        "bottom",
+        "onMeasure",
+        "widthMeasureSpec",
+        "heightMeasureSpec",
+        "removeAllLeftViews",
+        "removeAllRightViews",
+        "setCenterText",
+        "resId",
+        "title",
+        "sheetTitleBarStyle",
+        "Companion",
+        "TitlePosition",
+        "OUI_mkDebug"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x4,
+        0x3
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/obric/oui/sheet/OInsetSheetTitleBar$Companion;
+
+.field public static final STYLE_AREA_ONLY_ICON:I = 0x7
+
+.field public static final STYLE_BACK:I = 0x1
+
+.field public static final STYLE_CUSTOM_BACKGROUND:I = 0x9
+
+.field public static final STYLE_DELETE:I = 0x3
+
+.field public static final STYLE_HIGHLIGHT_BLUE:I = 0x4
+
+.field public static final STYLE_HIGHLIGHT_RED:I = 0x5
+
+.field public static final STYLE_MIX:I = 0xa
+
+.field public static final STYLE_NORMAL:I = 0x0
+
+.field public static final STYLE_NORMAL_WITH_ICON:I = 0x6
+
+.field public static final STYLE_SEARCH:I = 0x8
+
+.field public static final STYLE_SETTING:I = 0x2
+
+.field public static final STYLE_TNT_3_BLUE:I = 0xb
+
+
+# instance fields
+.field private desText:Ljava/lang/String;
+
+.field public mCenterContainer:Landroid/widget/FrameLayout;
+
+.field private mCenterTitleView:Landroid/widget/TextView;
+
+.field private mDesContainerView:Landroid/widget/FrameLayout;
+
+.field private mDesTextView:Landroid/widget/TextView;
+
+.field public mFixedCenterContainer:Landroid/widget/FrameLayout;
+
+.field private mFixedCenterSubTitleView:Landroid/widget/TextView;
+
+.field private mFixedCenterTitleView:Landroid/widget/TextView;
+
+.field public mLeftActionBack:Lcom/obric/oui/button/OButton;
+
+.field public mLeftContainer:Landroid/widget/LinearLayout;
+
+.field private mLeftTitleView:Landroid/widget/TextView;
+
+.field public mRightContainer:Landroid/widget/LinearLayout;
+
+.field private mTitlePosition:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+.field private showLeftBack:Z
+
+.field private subTitleText:Ljava/lang/String;
+
+.field private titleText:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/obric/oui/sheet/OInsetSheetTitleBar$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->Companion:Lcom/obric/oui/sheet/OInsetSheetTitleBar$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 6
+
+    const/4 v4, 0x6
+
+    const/4 v5, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-direct/range {v0 .. v5}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 6
+
+    const/4 v4, 0x4
+
+    const/4 v5, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    invoke-direct/range {v0 .. v5}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attrs"    # Landroid/util/AttributeSet;
+    .param p3, "defStyleAttr"    # I
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    nop
+
+    .line 18
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 47
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->showLeftBack:Z
+
+    .line 102
+    sget-object v0, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->FIXED_CENTER:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mTitlePosition:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    .line 132
+    nop
+
+    .line 133
+    invoke-direct {p0, p1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->init(Landroid/content/Context;)V
+
+    .line 134
+    if-eqz p2, :cond_0
+
+    .line 135
+    invoke-direct {p0, p2}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->initAttrs(Landroid/util/AttributeSet;)V
+
+    .line 137
+    :cond_0
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_0
+
+    .line 17
+    const/4 p2, 0x0
+
+    move-object p5, p2
+
+    check-cast p5, Landroid/util/AttributeSet;
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_1
+
+    const/4 p3, 0x0
+
+    :cond_1
+    invoke-direct {p0, p1, p2, p3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method private final init(Landroid/content/Context;)V
+    .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+
+    .line 140
+    sget v0, Lcom/obric/common/oui/R$layout;->o_sheet_title_bar_container:I
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-static {p1, v0, v1}, Landroid/widget/FrameLayout;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 141
+    sget v0, Lcom/obric/common/oui/R$id;->center_title:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.center_title)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterTitleView:Landroid/widget/TextView;
+
+    .line 142
+    sget v0, Lcom/obric/common/oui/R$id;->left_title:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.left_title)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftTitleView:Landroid/widget/TextView;
+
+    .line 143
+    sget v0, Lcom/obric/common/oui/R$id;->ll_left_action_container:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.ll_left_action_container)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftContainer:Landroid/widget/LinearLayout;
+
+    .line 144
+    sget v0, Lcom/obric/common/oui/R$id;->ll_right_action_container:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.ll_right_action_container)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    .line 145
+    sget v0, Lcom/obric/common/oui/R$id;->fl_center_action_container:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.fl_center_action_container)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterContainer:Landroid/widget/FrameLayout;
+
+    .line 146
+    sget v0, Lcom/obric/common/oui/R$id;->fl_fixed_center_action_container:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.fl_fix\u2026_center_action_container)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterContainer:Landroid/widget/FrameLayout;
+
+    .line 147
+    sget v0, Lcom/obric/common/oui/R$id;->fixed_center_title:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.fixed_center_title)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterTitleView:Landroid/widget/TextView;
+
+    .line 148
+    sget v0, Lcom/obric/common/oui/R$id;->left_action_back:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.left_action_back)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Lcom/obric/oui/button/OButton;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftActionBack:Lcom/obric/oui/button/OButton;
+
+    .line 149
+    sget v0, Lcom/obric/common/oui/R$id;->fixed_center_sub_title:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.fixed_center_sub_title)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterSubTitleView:Landroid/widget/TextView;
+
+    .line 150
+    sget v0, Lcom/obric/common/oui/R$id;->sheet_title_bar_des:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.sheet_title_bar_des)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mDesContainerView:Landroid/widget/FrameLayout;
+
+    .line 151
+    sget v0, Lcom/obric/common/oui/R$id;->sheet_title_bar_des_text:I
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const-string v1, "findViewById(R.id.sheet_title_bar_des_text)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mDesTextView:Landroid/widget/TextView;
+
+    .line 152
+    return-void
+.end method
+
+.method private final initAttrs(Landroid/util/AttributeSet;)V
+    .locals 5
+    .param p1, "attrs"    # Landroid/util/AttributeSet;
+
+    .line 155
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "context"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/obric/common/oui/R$styleable;->OCTitleBar:[I
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v1, v2, v2}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    move-result-object v0
+
+    .local v0, "$this$apply":Landroid/content/res/TypedArray;
+    const/4 v1, 0x0
+
+    .line 156
+    .local v1, "$i$a$-apply-OInsetSheetTitleBar$initAttrs$1":I
+    nop
+
+    .line 157
+    nop
+
+    .line 158
+    :try_start_0
+    sget v2, Lcom/obric/common/oui/R$styleable;->OCTitleBar_oui_title_pos:I
+
+    sget-object v3, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->FIXED_CENTER:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    invoke-virtual {v3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->getValue()I
+
+    move-result v3
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v2
+
+    .line 157
+    nop
+
+    .line 159
+    .local v2, "titlePositionOrdinal":I
+    invoke-static {}, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->values()[Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    move-result-object v3
+
+    aget-object v3, v3, v2
+
+    invoke-virtual {p0, v3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setMTitlePosition(Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;)V
+
+    .line 160
+    sget v3, Lcom/obric/common/oui/R$styleable;->OCTitleBar_oui_title_text:I
+
+    invoke-virtual {v0, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {p0, v3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setTitleText(Ljava/lang/String;)V
+
+    .line 161
+    sget v3, Lcom/obric/common/oui/R$styleable;->OCTitleBar_oui_title_des_text:I
+
+    invoke-virtual {v0, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {p0, v3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setDesText(Ljava/lang/String;)V
+
+    .line 162
+    sget v3, Lcom/obric/common/oui/R$styleable;->OCTitleBar_oui_useBackIcon:I
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v0, v3, v4}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v3
+
+    invoke-virtual {p0, v3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setShowLeftBack(Z)V
+
+    .line 163
+    sget v3, Lcom/obric/common/oui/R$styleable;->OCTitleBar_oui_sub_title_text:I
+
+    invoke-virtual {v0, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {p0, v3}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setSubTitleText(Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 165
+    .end local v2    # "titlePositionOrdinal":I
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 166
+    nop
+
+    .line 167
+    nop
+
+    .line 155
+    .end local v0    # "$this$apply":Landroid/content/res/TypedArray;
+    .end local v1    # "$i$a$-apply-OInsetSheetTitleBar$initAttrs$1":I
+    nop
+
+    .line 168
+    return-void
+
+    .line 166
+    .restart local v0    # "$this$apply":Landroid/content/res/TypedArray;
+    .restart local v1    # "$i$a$-apply-OInsetSheetTitleBar$initAttrs$1":I
+    :catchall_0
+    move-exception v2
+
+    .line 165
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    throw v2
+.end method
+
+
+# virtual methods
+.method public final addLeftImageView(I)Landroid/widget/ImageView;
+    .locals 3
+    .param p1, "drawableId"    # I
+
+    .line 191
+    new-instance v0, Landroid/widget/ImageView;
+
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
+
+    .line 192
+    .local v0, "imageView":Landroid/widget/ImageView;
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    .line 193
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftContainer:Landroid/widget/LinearLayout;
+
+    if-nez v1, :cond_0
+
+    const-string v2, "mLeftContainer"
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    move-object v2, v0
+
+    check-cast v2, Landroid/view/View;
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 194
+    return-object v0
+.end method
+
+.method public final addRightButton(II)Lcom/obric/oui/button/OButton;
+    .locals 3
+    .param p1, "style"    # I
+    .param p2, "stringId"    # I
+
+    .line 206
+    const-string v0, "mRightContainer"
+
+    const-string v1, "context"
+
+    sparse-switch p1, :sswitch_data_0
+
+    .line 209
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v1, :cond_2
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 208
+    :sswitch_0
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v1, :cond_0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, v2, v1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->createPrimaryLightButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 207
+    :sswitch_1
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v1, :cond_1
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_1
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, v2, v1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->createNeutralButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 209
+    :cond_2
+    :goto_0
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, v2, v1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->createPrimaryLightButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    .line 206
+    :goto_1
+    nop
+
+    .line 211
+    .local v0, "button":Lcom/obric/oui/button/OButton;
+    invoke-virtual {v0, p2}, Lcom/obric/oui/button/OButton;->setText(I)V
+
+    .line 212
+    return-object v0
+
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        0x0 -> :sswitch_1
+        0x4 -> :sswitch_0
+    .end sparse-switch
+.end method
+
+.method public final addRightImageView(I)Landroid/widget/ImageView;
+    .locals 3
+    .param p1, "drawableId"    # I
+
+    .line 199
+    new-instance v0, Landroid/widget/ImageView;
+
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
+
+    .line 200
+    .local v0, "imageView":Landroid/widget/ImageView;
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    .line 201
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v1, :cond_0
+
+    const-string v2, "mRightContainer"
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    move-object v2, v0
+
+    check-cast v2, Landroid/view/View;
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 202
+    return-object v0
+.end method
+
+.method public final addRightTransButton(I)Lcom/obric/oui/button/OButton;
+    .locals 3
+    .param p1, "drawableId"    # I
+
+    .line 216
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "context"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v1, :cond_0
+
+    const-string v2, "mRightContainer"
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, v0, v1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->createTransButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    .line 217
+    .local v0, "button":Lcom/obric/oui/button/OButton;
+    invoke-virtual {v0, p1}, Lcom/obric/oui/button/OButton;->setButtonSourceBitmap(I)V
+
+    .line 218
+    return-object v0
+.end method
+
+.method public final addRightView(Landroid/view/View;)V
+    .locals 2
+    .param p1, "view"    # Landroid/view/View;
+
+    const-string/jumbo v0, "view"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 239
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mRightContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 240
+    return-void
+.end method
+
+.method public final createButton(Landroid/content/Context;Landroid/view/ViewGroup;I)Lcom/obric/oui/button/OButton;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "root"    # Landroid/view/ViewGroup;
+    .param p3, "layoutResId"    # I
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "root"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 187
+    sget-object v0, Lcom/obric/oui/button/OButton;->Companion:Lcom/obric/oui/button/OButton$Companion;
+
+    invoke-virtual {v0, p1, p2, p3}, Lcom/obric/oui/button/OButton$Companion;->createButton(Landroid/content/Context;Landroid/view/ViewGroup;I)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final createNeutralButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "root"    # Landroid/view/ViewGroup;
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "root"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 171
+    sget-object v0, Lcom/obric/oui/button/OButton;->Companion:Lcom/obric/oui/button/OButton$Companion;
+
+    invoke-virtual {v0, p1, p2}, Lcom/obric/oui/button/OButton$Companion;->createNeutralButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final createPrimaryLightButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "root"    # Landroid/view/ViewGroup;
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "root"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 175
+    sget-object v0, Lcom/obric/oui/button/OButton;->Companion:Lcom/obric/oui/button/OButton$Companion;
+
+    invoke-virtual {v0, p1, p2}, Lcom/obric/oui/button/OButton$Companion;->createPrimaryLightButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final createTransButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "root"    # Landroid/view/ViewGroup;
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "root"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 179
+    sget-object v0, Lcom/obric/oui/button/OButton;->Companion:Lcom/obric/oui/button/OButton$Companion;
+
+    invoke-virtual {v0, p1, p2}, Lcom/obric/oui/button/OButton$Companion;->createTransButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final createUnderstatedButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "root"    # Landroid/view/ViewGroup;
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "root"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 183
+    sget-object v0, Lcom/obric/oui/button/OButton;->Companion:Lcom/obric/oui/button/OButton$Companion;
+
+    invoke-virtual {v0, p1, p2}, Lcom/obric/oui/button/OButton$Companion;->createUnderstatedButton(Landroid/content/Context;Landroid/view/ViewGroup;)Lcom/obric/oui/button/OButton;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getDesText()Ljava/lang/String;
+    .locals 1
+
+    .line 76
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->desText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getMCenterContainer()Landroid/widget/FrameLayout;
+    .locals 2
+
+    .line 37
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterContainer:Landroid/widget/FrameLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mCenterContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final getMFixedCenterContainer()Landroid/widget/FrameLayout;
+    .locals 2
+
+    .line 38
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterContainer:Landroid/widget/FrameLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mFixedCenterContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final getMLeftActionBack()Lcom/obric/oui/button/OButton;
+    .locals 2
+
+    .line 46
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftActionBack:Lcom/obric/oui/button/OButton;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mLeftActionBack"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final getMLeftContainer()Landroid/widget/LinearLayout;
+    .locals 2
+
+    .line 35
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftContainer:Landroid/widget/LinearLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mLeftContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final getMRightContainer()Landroid/widget/LinearLayout;
+    .locals 2
+
+    .line 36
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mRightContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public final getMTitlePosition()Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+    .locals 1
+
+    .line 102
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mTitlePosition:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    return-object v0
+.end method
+
+.method public final getMTitleView()Landroid/widget/TextView;
+    .locals 2
+
+    .line 88
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mTitlePosition:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    sget-object v1, Lcom/obric/oui/sheet/OInsetSheetTitleBar$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->ordinal()I
+
+    move-result v0
+
+    aget v0, v1, v0
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 98
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw v0
+
+    :pswitch_0
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mLeftTitleView"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 94
+    :pswitch_1
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mCenterTitleView"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 90
+    :pswitch_2
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mFixedCenterTitleView"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    .line 100
+    :cond_0
+    :goto_0
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final getShowLeftBack()Z
+    .locals 1
+
+    .line 47
+    iget-boolean v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->showLeftBack:Z
+
+    return v0
+.end method
+
+.method public final getSubTitleText()Ljava/lang/String;
+    .locals 1
+
+    .line 54
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->subTitleText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getTitleText()Ljava/lang/String;
+    .locals 1
+
+    .line 65
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->titleText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getTitleView()Landroid/widget/TextView;
+    .locals 1
+
+    .line 231
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getMTitleView()Landroid/widget/TextView;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected onLayout(ZIIII)V
+    .locals 0
+    .param p1, "changed"    # Z
+    .param p2, "left"    # I
+    .param p3, "top"    # I
+    .param p4, "right"    # I
+    .param p5, "bottom"    # I
+
+    .line 256
+    invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
+
+    .line 257
+    return-void
+.end method
+
+.method protected onMeasure(II)V
+    .locals 0
+    .param p1, "widthMeasureSpec"    # I
+    .param p2, "heightMeasureSpec"    # I
+
+    .line 252
+    invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
+
+    .line 253
+    return-void
+.end method
+
+.method public final removeAllLeftViews()V
+    .locals 2
+
+    .line 235
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftContainer:Landroid/widget/LinearLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mLeftContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->removeAllViews()V
+
+    .line 236
+    return-void
+.end method
+
+.method public final removeAllRightViews()V
+    .locals 2
+
+    .line 243
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    if-nez v0, :cond_0
+
+    const-string v1, "mRightContainer"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->removeAllViews()V
+
+    .line 244
+    return-void
+.end method
+
+.method public final setCenterText(I)V
+    .locals 2
+    .param p1, "resId"    # I
+
+    .line 222
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "resources.getString(resId)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 223
+    .local v0, "str":Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setTitleText(Ljava/lang/String;)V
+
+    .line 224
+    return-void
+.end method
+
+.method public final setCenterText(Ljava/lang/String;)V
+    .locals 1
+    .param p1, "title"    # Ljava/lang/String;
+
+    const-string/jumbo v0, "title"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 227
+    invoke-virtual {p0, p1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setTitleText(Ljava/lang/String;)V
+
+    .line 228
+    return-void
+.end method
+
+.method public final setDesText(Ljava/lang/String;)V
+    .locals 3
+    .param p1, "value"    # Ljava/lang/String;
+
+    .line 78
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->desText:Ljava/lang/String;
+
+    .line 79
+    move-object v0, p1
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    const-string v2, "mDesContainerView"
+
+    if-eqz v0, :cond_3
+
+    .line 80
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mDesContainerView:Landroid/widget/FrameLayout;
+
+    if-nez v0, :cond_2
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_2
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    goto :goto_2
+
+    .line 82
+    :cond_3
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mDesContainerView:Landroid/widget/FrameLayout;
+
+    if-nez v0, :cond_4
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_4
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    .line 83
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mDesTextView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_5
+
+    const-string v1, "mDesTextView"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_5
+    move-object v1, p1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 84
+    :goto_2
+    nop
+
+    .line 85
+    return-void
+.end method
+
+.method public final setMCenterContainer(Landroid/widget/FrameLayout;)V
+    .locals 1
+    .param p1, "<set-?>"    # Landroid/widget/FrameLayout;
+
+    const-string v0, "<set-?>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 37
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterContainer:Landroid/widget/FrameLayout;
+
+    return-void
+.end method
+
+.method public final setMFixedCenterContainer(Landroid/widget/FrameLayout;)V
+    .locals 1
+    .param p1, "<set-?>"    # Landroid/widget/FrameLayout;
+
+    const-string v0, "<set-?>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 38
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterContainer:Landroid/widget/FrameLayout;
+
+    return-void
+.end method
+
+.method public final setMLeftActionBack(Lcom/obric/oui/button/OButton;)V
+    .locals 1
+    .param p1, "<set-?>"    # Lcom/obric/oui/button/OButton;
+
+    const-string v0, "<set-?>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 46
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftActionBack:Lcom/obric/oui/button/OButton;
+
+    return-void
+.end method
+
+.method public final setMLeftContainer(Landroid/widget/LinearLayout;)V
+    .locals 1
+    .param p1, "<set-?>"    # Landroid/widget/LinearLayout;
+
+    const-string v0, "<set-?>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 35
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftContainer:Landroid/widget/LinearLayout;
+
+    return-void
+.end method
+
+.method public final setMRightContainer(Landroid/widget/LinearLayout;)V
+    .locals 1
+    .param p1, "<set-?>"    # Landroid/widget/LinearLayout;
+
+    const-string v0, "<set-?>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 36
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mRightContainer:Landroid/widget/LinearLayout;
+
+    return-void
+.end method
+
+.method public final setMTitlePosition(Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;)V
+    .locals 6
+    .param p1, "value"    # Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    .line 124
+    const-string/jumbo v0, "value"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 104
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mTitlePosition:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    .line 105
+    sget-object v0, Lcom/obric/oui/sheet/OInsetSheetTitleBar$WhenMappings;->$EnumSwitchMapping$1:[I
+
+    invoke-virtual {p1}, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    const-string v1, "mLeftTitleView"
+
+    const-string v2, "mCenterTitleView"
+
+    const-string v3, "mFixedCenterTitleView"
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0x8
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 119
+    :pswitch_0
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_0
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 120
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_1
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_1
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 121
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_2
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_2
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 122
+    invoke-virtual {p0, v4}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->setShowLeftBack(Z)V
+
+    goto :goto_0
+
+    .line 113
+    :pswitch_1
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_3
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_3
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 114
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_4
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_4
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 115
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_5
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_5
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 107
+    :pswitch_2
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_6
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_6
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 108
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mCenterTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_7
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_7
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 109
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftTitleView:Landroid/widget/TextView;
+
+    if-nez v0, :cond_8
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_8
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 125
+    :goto_0
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getMTitleView()Landroid/widget/TextView;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->titleText:Ljava/lang/String;
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 126
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final setShowLeftBack(Z)V
+    .locals 4
+    .param p1, "value"    # Z
+
+    .line 49
+    iput-boolean p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->showLeftBack:Z
+
+    .line 50
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftActionBack:Lcom/obric/oui/button/OButton;
+
+    const-string v1, "mLeftActionBack"
+
+    if-nez v0, :cond_0
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    const/16 v2, 0x8
+
+    if-eqz p1, :cond_1
+
+    const/4 v3, 0x0
+
+    goto :goto_0
+
+    :cond_1
+    move v3, v2
+
+    :goto_0
+    invoke-virtual {v0, v3}, Lcom/obric/oui/button/OButton;->setVisibility(I)V
+
+    .line 51
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mTitlePosition:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    sget-object v3, Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;->LEFT_IN_ACTION:Lcom/obric/oui/sheet/OInsetSheetTitleBar$TitlePosition;
+
+    if-ne v0, v3, :cond_3
+
+    iget-object v0, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mLeftActionBack:Lcom/obric/oui/button/OButton;
+
+    if-nez v0, :cond_2
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_2
+    invoke-virtual {v0, v2}, Lcom/obric/oui/button/OButton;->setVisibility(I)V
+
+    .line 52
+    :cond_3
+    return-void
+.end method
+
+.method public final setSubTitleText(Ljava/lang/String;)V
+    .locals 3
+    .param p1, "value"    # Ljava/lang/String;
+
+    .line 56
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->subTitleText:Ljava/lang/String;
+
+    .line 57
+    const-string v0, "mFixedCenterSubTitleView"
+
+    if-nez p1, :cond_1
+
+    .line 58
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterSubTitleView:Landroid/widget/TextView;
+
+    if-nez v1, :cond_0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_0
+    const/16 v0, 0x8
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 60
+    :cond_1
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterSubTitleView:Landroid/widget/TextView;
+
+    if-nez v1, :cond_2
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_2
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 61
+    iget-object v1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->mFixedCenterSubTitleView:Landroid/widget/TextView;
+
+    if-nez v1, :cond_3
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    :cond_3
+    move-object v0, p1
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 62
+    :goto_0
+    nop
+
+    .line 63
+    return-void
+.end method
+
+.method public final setTitleText(Ljava/lang/String;)V
+    .locals 2
+    .param p1, "value"    # Ljava/lang/String;
+
+    .line 67
+    iput-object p1, p0, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->titleText:Ljava/lang/String;
+
+    .line 68
+    if-nez p1, :cond_0
+
+    .line 69
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getMTitleView()Landroid/widget/TextView;
+
+    move-result-object v0
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 71
+    :cond_0
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getMTitleView()Landroid/widget/TextView;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 72
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getMTitleView()Landroid/widget/TextView;
+
+    move-result-object v0
+
+    move-object v1, p1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 73
+    :goto_0
+    nop
+
+    .line 74
+    return-void
+.end method
+
+.method public final sheetTitleBarStyle()V
+    .locals 2
+
+    .line 248
+    invoke-virtual {p0}, Lcom/obric/oui/sheet/OInsetSheetTitleBar;->getMTitleView()Landroid/widget/TextView;
+
+    move-result-object v0
+
+    const/high16 v1, 0x41800000    # 16.0f
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
+
+    .line 249
+    return-void
+.end method

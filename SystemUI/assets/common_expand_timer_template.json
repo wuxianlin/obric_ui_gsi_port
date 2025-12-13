@@ -1,0 +1,43 @@
+{
+  "icon": {
+    "width": 1,
+    "height": 1,
+    "icon": "",
+    "id": ""
+  },
+  "titleIcon": {
+    "width": 1,
+    "height": 1,
+    "icon": "",
+    "id": ""
+  },
+  "content": {
+    "text": "",
+    "textSize": 1,
+    "textColor": "#ffffffff",
+    "id": ""
+  },
+  "buttonList": [
+    {
+      "width": 1,
+      "height": 1,
+      "icon": "",
+      "textIconStyle": {
+        "backgroundColor": "#ffffffff",
+        "textSize": 1,
+        "textColor": "#ffffffff"
+      },
+      "id": ""
+    }
+  ],
+  "timeStyle": {
+    "textSize": 1,
+    "textColor": "#ffffffff",
+    "id": ""
+  },
+  "current_timestamp": 22222,
+  "duration": 5000,
+  "type": 0,
+  "unit": "s",
+  "is_auto": 0
+}

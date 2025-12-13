@@ -1,0 +1,140 @@
+[
+  {
+    "appId": "screen_record_expand_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "screen_record_collapse_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "count_down_expand_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "count_down_collapse_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_expand_timer_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_expand_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_collapse_timer_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_collapse_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "com.obric.island_applet",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "battery_charging_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "third_audio_record_expand_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "com.obric.island_assistant",
+    "packageName": "com.obric.island_assistant",
+    "versionCode": 1759042732976,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_collapse_template",
+    "packageName": "com.obric.island_assistant",
+    "versionCode": 1759042732976,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_expand_template",
+    "packageName": "com.obric.island_assistant",
+    "versionCode": 1759042732976,
+    "buildInPackage": true
+  },
+  {
+    "appId": "complex_task_dialogue_island",
+    "packageName": "com.obric.island_assistant",
+    "versionCode": 1759042732976,
+    "buildInPackage": true
+  },
+  {
+    "appId": "complex_task_island",
+    "packageName": "com.obric.island_assistant",
+    "versionCode": 1759042732976,
+    "buildInPackage": true
+  },
+  {
+    "appId": "action_expand_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "action_dialogue_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "memory_collapse_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "memory_expand_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "first_device_collapse_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "common_showinfo_template",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  },
+  {
+    "appId": "data_donation_island",
+    "packageName": "com.obric.island_applet",
+    "versionCode": 1761658835604,
+    "buildInPackage": true
+  }
+]

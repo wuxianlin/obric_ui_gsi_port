@@ -1,0 +1,93 @@
+.class Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;
+.super Ljava/lang/Object;
+.source "BottomSheetBehavior.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/obric/oui/panel/BottomSheetBehavior;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "SettleRunnable"
+.end annotation
+
+
+# instance fields
+.field private final targetState:I
+
+.field final synthetic this$0:Lcom/obric/oui/panel/BottomSheetBehavior;
+
+.field private final view:Landroid/view/View;
+
+
+# direct methods
+.method constructor <init>(Lcom/obric/oui/panel/BottomSheetBehavior;Landroid/view/View;I)V
+    .locals 0
+    .param p2, "view"    # Landroid/view/View;
+    .param p3, "targetState"    # I
+
+    .line 1200
+    .local p0, "this":Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;, "Lcom/obric/oui/panel/BottomSheetBehavior<TV;>.SettleRunnable;"
+    iput-object p1, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/obric/oui/panel/BottomSheetBehavior;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1201
+    iput-object p2, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->view:Landroid/view/View;
+
+    .line 1202
+    iput p3, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->targetState:I
+
+    .line 1203
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .line 1207
+    .local p0, "this":Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;, "Lcom/obric/oui/panel/BottomSheetBehavior<TV;>.SettleRunnable;"
+    iget-object v0, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/obric/oui/panel/BottomSheetBehavior;
+
+    iget-object v0, v0, Lcom/obric/oui/panel/BottomSheetBehavior;->viewDragHelper:Lcom/obric/oui/panel/ViewDragHelper;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/obric/oui/panel/BottomSheetBehavior;
+
+    iget-object v0, v0, Lcom/obric/oui/panel/BottomSheetBehavior;->viewDragHelper:Lcom/obric/oui/panel/ViewDragHelper;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/obric/oui/panel/ViewDragHelper;->continueSettling(Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1208
+    iget-object v0, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->view:Landroid/view/View;
+
+    invoke-static {v0, p0}, Landroidx/core/view/ViewCompat;->postOnAnimation(Landroid/view/View;Ljava/lang/Runnable;)V
+
+    goto :goto_0
+
+    .line 1210
+    :cond_0
+    iget-object v0, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/obric/oui/panel/BottomSheetBehavior;
+
+    iget v1, p0, Lcom/obric/oui/panel/BottomSheetBehavior$SettleRunnable;->targetState:I
+
+    invoke-virtual {v0, v1}, Lcom/obric/oui/panel/BottomSheetBehavior;->setStateInternal(I)V
+
+    .line 1212
+    :goto_0
+    return-void
+.end method

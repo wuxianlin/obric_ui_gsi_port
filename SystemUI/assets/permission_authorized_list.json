@@ -1,0 +1,17 @@
+{
+  "authorized": [
+    {
+      "packageName": "com.larus.nova",
+      "sign": [
+        "ff04b47ec9dd20b79f758af67a184926db00ac55cfd2a01e03fba9a1dca9de2a"
+      ]
+    },
+    {
+      "packageName": "com.obric.assistantaiagent",
+      "sign": [
+        "c8a2e9bccf597c2fb6dc66bee293fc13f2fc47ec77bc6b2b0d52c11f51192ab8",
+        "b5557731885a53f4306abe67067ea07076200946dbf172770e930744b6bfcd68"
+      ]
+    }
+  ]
+}

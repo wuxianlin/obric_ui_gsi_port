@@ -1,0 +1,16 @@
+{
+  "startIcon": {
+    "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+    "width": 24,
+    "height": 24
+  },
+  "timeStyle": {
+    "textSize": 14,
+    "textColor": "#ffff3333"
+  },
+  "current_timestamp": 1746960124000,
+  "duraiton": 5000,
+  "type": 1,
+  "unit": "s",
+  "is_auto": 0
+}

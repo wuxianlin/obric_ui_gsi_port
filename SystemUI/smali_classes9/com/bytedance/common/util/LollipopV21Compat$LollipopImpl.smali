@@ -1,0 +1,117 @@
+.class Lcom/bytedance/common/util/LollipopV21Compat$LollipopImpl;
+.super Lcom/bytedance/common/util/LollipopV21Compat$BaseImpl;
+.source "LollipopV21Compat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/common/util/LollipopV21Compat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "LollipopImpl"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 27
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/bytedance/common/util/LollipopV21Compat$BaseImpl;-><init>(Lcom/bytedance/common/util/LollipopV21Compat$1;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bytedance/common/util/LollipopV21Compat$1;)V
+    .locals 0
+    .param p1, "x0"    # Lcom/bytedance/common/util/LollipopV21Compat$1;
+
+    .line 27
+    invoke-direct {p0}, Lcom/bytedance/common/util/LollipopV21Compat$LollipopImpl;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public setAcceptThirdPartyCookies(Landroid/webkit/WebView;Z)V
+    .locals 1
+    .param p1, "webview"    # Landroid/webkit/WebView;
+    .param p2, "accept"    # Z
+
+    .line 42
+    if-eqz p1, :cond_0
+
+    .line 43
+    :try_start_0
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1, p2}, Landroid/webkit/CookieManager;->setAcceptThirdPartyCookies(Landroid/webkit/WebView;Z)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 45
+    :catch_0
+    move-exception v0
+
+    .line 46
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_1
+
+    .line 47
+    .end local v0    # "e":Ljava/lang/Exception;
+    :cond_0
+    :goto_0
+    nop
+
+    .line 48
+    :goto_1
+    return-void
+.end method
+
+.method public setMixedContentMode(Landroid/webkit/WebSettings;I)V
+    .locals 1
+    .param p1, "settings"    # Landroid/webkit/WebSettings;
+    .param p2, "mode"    # I
+
+    .line 31
+    if-eqz p1, :cond_0
+
+    .line 32
+    :try_start_0
+    invoke-virtual {p1, p2}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 34
+    :catch_0
+    move-exception v0
+
+    .line 35
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_1
+
+    .line 36
+    .end local v0    # "e":Ljava/lang/Exception;
+    :cond_0
+    :goto_0
+    nop
+
+    .line 37
+    :goto_1
+    return-void
+.end method

@@ -1,0 +1,2225 @@
+.class public abstract Lcom/obric/oui/indicator/OBaseIndicator;
+.super Landroid/widget/FrameLayout;
+.source "OBaseIndicator.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;,
+        Lcom/obric/oui/indicator/OBaseIndicator$Pager;,
+        Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nOBaseIndicator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OBaseIndicator.kt\ncom/obric/oui/indicator/OBaseIndicator\n+ 2 OUnitExtension.kt\ncom/obric/oui/common/util/OUnitExtensionKt\n*L\n1#1,529:1\n43#2,5:530\n36#2,5:535\n43#2,5:540\n*E\n*S KotlinDebug\n*F\n+ 1 OBaseIndicator.kt\ncom/obric/oui/indicator/OBaseIndicator\n*L\n86#1,5:530\n94#1,5:535\n147#1,5:540\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000~\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0010\u0007\n\u0002\u0008\u001a\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0010\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008&\u0018\u00002\u00020\u0001:\u0003pqrB%\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0010\u0010P\u001a\u00020Q2\u0006\u0010R\u001a\u00020\u0007H&J\u0010\u0010S\u001a\u00020Q2\u0006\u0010T\u001a\u00020\u0007H\u0004J\u0008\u0010U\u001a\u00020VH&J \u0010W\u001a\u00020\u00072\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010X\u001a\u00020\u00142\u0006\u0010Y\u001a\u00020\u0007H\u0002J\u0008\u0010Z\u001a\u00020QH\u0014J\u0008\u0010[\u001a\u00020QH\u0002J\u0010\u0010\\\u001a\u00020Q2\u0006\u0010R\u001a\u00020\u0007H&J\u0006\u0010]\u001a\u00020QJ\u0008\u0010^\u001a\u00020QH\u0002J\u0008\u0010_\u001a\u00020QH\u0004J\u0008\u0010`\u001a\u00020QH\u0002J\u0008\u0010a\u001a\u00020QH\u0002J\u0008\u0010b\u001a\u00020QH\u0002J\u0008\u0010c\u001a\u00020QH&J\u0010\u0010d\u001a\u00020Q2\u0006\u0010R\u001a\u00020\u0007H&J\u0010\u0010e\u001a\u00020Q2\u0006\u0010T\u001a\u00020\u0007H\u0002J\u0008\u0010f\u001a\u00020QH\u0004J\u0010\u0010g\u001a\u00020Q2\u0006\u0010h\u001a\u00020iH\u0007J\u001c\u0010g\u001a\u00020Q2\u0006\u0010h\u001a\u00020i2\u000c\u0010j\u001a\u0008\u0012\u0004\u0012\u00020\u00070kJ\u0016\u0010g\u001a\u00020Q2\u0006\u0010h\u001a\u00020i2\u0006\u0010j\u001a\u00020\u0007J\u001c\u0010l\u001a\u00020Q2\u0006\u0010h\u001a\u00020m2\u000c\u0010j\u001a\u0008\u0012\u0004\u0012\u00020\u00070kJ\u0016\u0010l\u001a\u00020Q2\u0006\u0010h\u001a\u00020m2\u0006\u0010j\u001a\u00020\u0007J\u0014\u0010n\u001a\u00020\u0007*\u00020\u00072\u0006\u0010o\u001a\u00020\u0007H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082D\u00a2\u0006\u0002\n\u0000R\u0012\u0010\u000b\u001a\u00020\u000cX\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR \u0010\u000f\u001a\u0012\u0012\u0004\u0012\u00020\u00110\u0010j\u0008\u0012\u0004\u0012\u00020\u0011`\u00128\u0004X\u0085\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0013\u001a\u00020\u0014X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R&\u0010\u001a\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u00078\u0006@FX\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u001c\"\u0004\u0008\u001d\u0010\u001eR$\u0010 \u001a\u00020\u001f2\u0006\u0010\u0019\u001a\u00020\u001f@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R$\u0010%\u001a\u00020\u001f2\u0006\u0010\u0019\u001a\u00020\u001f@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008&\u0010\"\"\u0004\u0008\'\u0010$R$\u0010(\u001a\u00020\u001f2\u0006\u0010\u0019\u001a\u00020\u001f@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008)\u0010\"\"\u0004\u0008*\u0010$R&\u0010+\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u00078\u0006@FX\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008,\u0010\u001c\"\u0004\u0008-\u0010\u001eR$\u0010.\u001a\u00020\u001f2\u0006\u0010\u0019\u001a\u00020\u001f@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008/\u0010\"\"\u0004\u00080\u0010$R$\u00101\u001a\u00020\u001f2\u0006\u0010\u0019\u001a\u00020\u001f@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00082\u0010\"\"\u0004\u00083\u0010$R\u001a\u00104\u001a\u00020\u0014X\u0084\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00085\u0010\u0016\"\u0004\u00086\u0010\u0018R$\u00107\u001a\u00020\u001f2\u0006\u0010\u0019\u001a\u00020\u001f@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00088\u0010\"\"\u0004\u00089\u0010$R(\u0010;\u001a\u0004\u0018\u00010:2\u0008\u0010\u0019\u001a\u0004\u0018\u00010:@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008<\u0010=\"\u0004\u0008>\u0010?R\"\u0010A\u001a\u0004\u0018\u00010@2\u0008\u0010\u0019\u001a\u0004\u0018\u00010@@BX\u0082\u000e\u00a2\u0006\u0008\n\u0000\"\u0004\u0008B\u0010CR\u000e\u0010D\u001a\u00020\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010E\u001a\u00020\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010F\u001a\u00020\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010G\u001a\u00020\u0014X\u0084\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008H\u0010\u0016\"\u0004\u0008I\u0010\u0018R$\u0010J\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u0007@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008K\u0010\u001c\"\u0004\u0008L\u0010\u001eR$\u0010M\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u0007@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008N\u0010\u001c\"\u0004\u0008O\u0010\u001e\u00a8\u0006s"
+    }
+    d2 = {
+        "Lcom/obric/oui/indicator/OBaseIndicator;",
+        "Landroid/widget/FrameLayout;",
+        "context",
+        "Landroid/content/Context;",
+        "attrs",
+        "Landroid/util/AttributeSet;",
+        "defStyleAttr",
+        "",
+        "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
+        "TAG",
+        "",
+        "custom",
+        "Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;",
+        "getCustom",
+        "()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;",
+        "dots",
+        "Ljava/util/ArrayList;",
+        "Lcom/obric/oui/indicator/IndicatorIcon;",
+        "Lkotlin/collections/ArrayList;",
+        "dotsClickable",
+        "",
+        "getDotsClickable",
+        "()Z",
+        "setDotsClickable",
+        "(Z)V",
+        "value",
+        "dotsColor",
+        "getDotsColor",
+        "()I",
+        "setDotsColor",
+        "(I)V",
+        "",
+        "dotsCornerRadius",
+        "getDotsCornerRadius",
+        "()F",
+        "setDotsCornerRadius",
+        "(F)V",
+        "dotsHeight",
+        "getDotsHeight",
+        "setDotsHeight",
+        "dotsSpacing",
+        "getDotsSpacing",
+        "setDotsSpacing",
+        "dotsStrokeColor",
+        "getDotsStrokeColor",
+        "setDotsStrokeColor",
+        "dotsStrokeWidth",
+        "getDotsStrokeWidth",
+        "setDotsStrokeWidth",
+        "dotsWidth",
+        "getDotsWidth",
+        "setDotsWidth",
+        "initialized",
+        "getInitialized",
+        "setInitialized",
+        "layoutHeight",
+        "getLayoutHeight",
+        "setLayoutHeight",
+        "Lcom/obric/oui/indicator/OBaseIndicator$Pager;",
+        "pager",
+        "getPager",
+        "()Lcom/obric/oui/indicator/OBaseIndicator$Pager;",
+        "setPager",
+        "(Lcom/obric/oui/indicator/OBaseIndicator$Pager;)V",
+        "Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;",
+        "pagerDataSetObserver",
+        "setPagerDataSetObserver",
+        "(Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;)V",
+        "pendingRefreshDotsDraws",
+        "pendingRefreshDotsSize",
+        "pendingRefreshDotsSpacing",
+        "pendingRefreshParentLayout",
+        "getPendingRefreshParentLayout",
+        "setPendingRefreshParentLayout",
+        "sidePadding",
+        "getSidePadding",
+        "setSidePadding",
+        "type",
+        "getType",
+        "setType",
+        "addDot",
+        "",
+        "index",
+        "addDots",
+        "count",
+        "buildOnPageChangedListener",
+        "Lcom/obric/oui/indicator/OnPageChangeListenerHelper;",
+        "getColorForMode",
+        "isNightMode",
+        "colorId",
+        "onAttachedToWindow",
+        "postPendingRefresh",
+        "refreshDotDraw",
+        "refreshDots",
+        "refreshDotsCount",
+        "refreshDotsDraws",
+        "refreshDotsSize",
+        "refreshDotsSpacing",
+        "refreshOnPageChangedListener",
+        "refreshParentLayout",
+        "removeDot",
+        "removeDots",
+        "setInitComplete",
+        "setViewPager",
+        "viewPager",
+        "Landroidx/viewpager/widget/ViewPager;",
+        "pageCount",
+        "Lkotlin/Function0;",
+        "setViewPager2",
+        "Landroidx/viewpager2/widget/ViewPager2;",
+        "mod",
+        "num",
+        "CustomDot",
+        "Pager",
+        "ReleaseMe",
+        "OUI_mkDebug"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x4,
+        0x3
+    }
+.end annotation
+
+
+# instance fields
+.field private final TAG:Ljava/lang/String;
+
+.field protected final dots:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lcom/obric/oui/indicator/IndicatorIcon;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private dotsClickable:Z
+
+.field private dotsColor:I
+
+.field private dotsCornerRadius:F
+
+.field private dotsHeight:F
+
+.field private dotsSpacing:F
+
+.field private dotsStrokeColor:I
+
+.field private dotsStrokeWidth:F
+
+.field private dotsWidth:F
+
+.field private initialized:Z
+
+.field private layoutHeight:F
+
+.field private pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+.field private pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+.field private pendingRefreshDotsDraws:Z
+
+.field private pendingRefreshDotsSize:Z
+
+.field private pendingRefreshDotsSpacing:Z
+
+.field private pendingRefreshParentLayout:Z
+
+.field private sidePadding:I
+
+.field private type:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 6
+
+    const/4 v4, 0x6
+
+    const/4 v5, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-direct/range {v0 .. v5}, Lcom/obric/oui/indicator/OBaseIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 6
+
+    const/4 v4, 0x4
+
+    const/4 v5, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    invoke-direct/range {v0 .. v5}, Lcom/obric/oui/indicator/OBaseIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 6
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attrs"    # Landroid/util/AttributeSet;
+    .param p3, "defStyleAttr"    # I
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 33
+    nop
+
+    .line 37
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 39
+    const-string v0, "OBaseIndicator"
+
+    iput-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->TAG:Ljava/lang/String;
+
+    .line 69
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    .line 71
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDefaultWidth()F
+
+    move-result v0
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsWidth:F
+
+    .line 78
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDefaultHeight()F
+
+    move-result v0
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsHeight:F
+
+    .line 86
+    const/16 v0, 0x20
+
+    .local v0, "$this$dpFloat$iv":I
+    const/4 v1, 0x0
+
+    .line 530
+    .local v1, "$i$f$getDpFloat":I
+    nop
+
+    .line 531
+    nop
+
+    .line 532
+    int-to-float v2, v0
+
+    .line 533
+    invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const-string v4, "Resources.getSystem()"
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v3
+
+    .line 530
+    const/4 v5, 0x1
+
+    invoke-static {v5, v2, v3}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
+    move-result v2
+
+    .line 534
+    nop
+
+    .end local v0    # "$this$dpFloat$iv":I
+    .end local v1    # "$i$f$getDpFloat":I
+    iput v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->layoutHeight:F
+
+    .line 94
+    const/16 v0, 0xc
+
+    .local v0, "$this$dp$iv":I
+    const/4 v1, 0x0
+
+    .line 535
+    .local v1, "$i$f$getDp":I
+    nop
+
+    .line 539
+    nop
+
+    .line 535
+    nop
+
+    .line 536
+    nop
+
+    .line 537
+    int-to-float v2, v0
+
+    .line 538
+    invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v3
+
+    .line 535
+    invoke-static {v5, v2, v3}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
+    move-result v2
+
+    .line 539
+    invoke-static {v2}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v0
+
+    .end local v0    # "$this$dp$iv":I
+    .end local v1    # "$i$f$getDp":I
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->sidePadding:I
+
+    .line 101
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDefaultSpacing()F
+
+    move-result v0
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsSpacing:F
+
+    .line 117
+    sget v0, Lcom/obric/common/oui/R$color;->oui_text_4:I
+
+    invoke-static {p1, v0}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsColor:I
+
+    .line 130
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsHeight:F
+
+    const/4 v1, 0x2
+
+    int-to-float v1, v1
+
+    div-float/2addr v0, v1
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsCornerRadius:F
+
+    .line 137
+    iput-boolean v5, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsClickable:Z
+
+    .line 140
+    sget v0, Lcom/obric/common/oui/R$color;->Transparent:I
+
+    invoke-static {p1, v0}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeColor:I
+
+    .line 147
+    const/4 v0, 0x0
+
+    .local v0, "$this$dpFloat$iv":I
+    const/4 v1, 0x0
+
+    .line 540
+    .local v1, "$i$f$getDpFloat":I
+    nop
+
+    .line 541
+    nop
+
+    .line 542
+    int-to-float v2, v0
+
+    .line 543
+    invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v3
+
+    .line 540
+    invoke-static {v5, v2, v3}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
+    move-result v2
+
+    .line 544
+    nop
+
+    .end local v0    # "$this$dpFloat$iv":I
+    .end local v1    # "$i$f$getDpFloat":I
+    iput v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeWidth:F
+
+    .line 159
+    nop
+
+    .line 160
+    if-eqz p2, :cond_0
+
+    .line 161
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getStyleableId()[I
+
+    move-result-object v0
+
+    invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object v0
+
+    const-string v1, "context.obtainStyledAttr\u2026ttrs, custom.styleableId)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 163
+    .local v0, "a":Landroid/content/res/TypedArray;
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getTypeId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->type:I
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setType(I)V
+
+    .line 164
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsWidthId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsWidth:F
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsWidth(F)V
+
+    .line 165
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsHeightId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsHeight:F
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsHeight(F)V
+
+    .line 166
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getLayoutHeightId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->layoutHeight:F
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setLayoutHeight(F)V
+
+    .line 167
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsSpacingId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsSpacing:F
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsSpacing(F)V
+
+    .line 168
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsColorId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsColor:I
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getColor(II)I
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsColor(I)V
+
+    .line 169
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsCornerRadiusId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsCornerRadius:F
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsCornerRadius(F)V
+
+    .line 170
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsClickableId()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, v5}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v1
+
+    iput-boolean v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsClickable:Z
+
+    .line 171
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsStrokeColorId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeColor:I
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getColor(II)I
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsStrokeColor(I)V
+
+    .line 172
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;->getDotsStrokeWidthId()I
+
+    move-result v1
+
+    iget v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeWidth:F
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/obric/oui/indicator/OBaseIndicator;->setDotsStrokeWidth(F)V
+
+    .line 174
+    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 176
+    .end local v0    # "a":Landroid/content/res/TypedArray;
+    :cond_0
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_0
+
+    .line 35
+    const/4 p2, 0x0
+
+    move-object p5, p2
+
+    check-cast p5, Landroid/util/AttributeSet;
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_1
+
+    .line 36
+    const/4 p3, 0x0
+
+    :cond_1
+    invoke-direct {p0, p1, p2, p3}, Lcom/obric/oui/indicator/OBaseIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public static final synthetic access$getPendingRefreshDotsDraws$p(Lcom/obric/oui/indicator/OBaseIndicator;)Z
+    .locals 1
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsDraws:Z
+
+    return v0
+.end method
+
+.method public static final synthetic access$getPendingRefreshDotsSize$p(Lcom/obric/oui/indicator/OBaseIndicator;)Z
+    .locals 1
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSize:Z
+
+    return v0
+.end method
+
+.method public static final synthetic access$getPendingRefreshDotsSpacing$p(Lcom/obric/oui/indicator/OBaseIndicator;)Z
+    .locals 1
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSpacing:Z
+
+    return v0
+.end method
+
+.method public static final synthetic access$mod(Lcom/obric/oui/indicator/OBaseIndicator;II)I
+    .locals 1
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+    .param p1, "$this$access_u24mod"    # I
+    .param p2, "num"    # I
+
+    .line 33
+    invoke-direct {p0, p1, p2}, Lcom/obric/oui/indicator/OBaseIndicator;->mod(II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static final synthetic access$refreshDotsCount(Lcom/obric/oui/indicator/OBaseIndicator;)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsCount()V
+
+    return-void
+.end method
+
+.method public static final synthetic access$refreshDotsSize(Lcom/obric/oui/indicator/OBaseIndicator;)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsSize()V
+
+    return-void
+.end method
+
+.method public static final synthetic access$refreshDotsSpacing(Lcom/obric/oui/indicator/OBaseIndicator;)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsSpacing()V
+
+    return-void
+.end method
+
+.method public static final synthetic access$refreshOnPageChangedListener(Lcom/obric/oui/indicator/OBaseIndicator;)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+
+    .line 33
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshOnPageChangedListener()V
+
+    return-void
+.end method
+
+.method public static final synthetic access$setPendingRefreshDotsDraws$p(Lcom/obric/oui/indicator/OBaseIndicator;Z)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+    .param p1, "<set-?>"    # Z
+
+    .line 33
+    iput-boolean p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsDraws:Z
+
+    return-void
+.end method
+
+.method public static final synthetic access$setPendingRefreshDotsSize$p(Lcom/obric/oui/indicator/OBaseIndicator;Z)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+    .param p1, "<set-?>"    # Z
+
+    .line 33
+    iput-boolean p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSize:Z
+
+    return-void
+.end method
+
+.method public static final synthetic access$setPendingRefreshDotsSpacing$p(Lcom/obric/oui/indicator/OBaseIndicator;Z)V
+    .locals 0
+    .param p0, "$this"    # Lcom/obric/oui/indicator/OBaseIndicator;
+    .param p1, "<set-?>"    # Z
+
+    .line 33
+    iput-boolean p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSpacing:Z
+
+    return-void
+.end method
+
+.method private final getColorForMode(Landroid/content/Context;ZI)I
+    .locals 4
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "isNightMode"    # Z
+    .param p3, "colorId"    # I
+
+    .line 517
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v1, "context.resources"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    .line 518
+    .local v0, "configuration":Landroid/content/res/Configuration;
+    new-instance v1, Landroid/content/res/Configuration;
+
+    invoke-direct {v1, v0}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
+
+    .line 519
+    .local v1, "newConfig":Landroid/content/res/Configuration;
+    if-eqz p2, :cond_0
+
+    .line 520
+    const/16 v2, 0x20
+
+    goto :goto_0
+
+    .line 522
+    :cond_0
+    const/16 v2, 0x10
+
+    .line 519
+    :goto_0
+    iput v2, v1, Landroid/content/res/Configuration;->uiMode:I
+
+    .line 525
+    invoke-virtual {p1, v1}, Landroid/content/Context;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
+
+    move-result-object v2
+
+    .line 526
+    .local v2, "contextForMode":Landroid/content/Context;
+    invoke-static {v2, p3}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
+
+    move-result v3
+
+    return v3
+.end method
+
+.method private final mod(II)I
+    .locals 4
+    .param p1, "$this$mod"    # I
+    .param p2, "num"    # I
+
+    .line 500
+    if-nez p2, :cond_0
+
+    .line 501
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->TAG:Ljava/lang/String;
+
+    const-string v1, "mod num is 0"
+
+    invoke-static {v0, v1}, Lcom/obric/oui/utils/log/L;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 502
+    return p1
+
+    .line 504
+    :cond_0
+    nop
+
+    .line 505
+    :try_start_0
+    rem-int v0, p1, p2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    .line 506
+    :catch_0
+    move-exception v0
+
+    .line 507
+    .local v0, "e":Ljava/lang/Exception;
+    nop
+
+    .line 508
+    instance-of v1, v0, Ljava/lang/ArithmeticException;
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->TAG:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "\u4e0d\u8981\u4e71\u96640\u5440 "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/obric/oui/utils/log/L;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 509
+    :cond_1
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->TAG:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "\u6293\u4f4f\u4e86\u4e00\u4e2aException\u5e76ignore, "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/obric/oui/utils/log/L;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 510
+    :goto_0
+    nop
+
+    .line 511
+    move v0, p1
+
+    .line 504
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_1
+    return v0
+.end method
+
+.method private final postPendingRefresh()V
+    .locals 1
+
+    .line 235
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$postPendingRefresh$1;
+
+    invoke-direct {v0, p0}, Lcom/obric/oui/indicator/OBaseIndicator$postPendingRefresh$1;-><init>(Lcom/obric/oui/indicator/OBaseIndicator;)V
+
+    check-cast v0, Ljava/lang/Runnable;
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->post(Ljava/lang/Runnable;)Z
+
+    .line 249
+    return-void
+.end method
+
+.method private final refreshDotsCount()V
+    .locals 2
+
+    .line 252
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 253
+    :cond_0
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v1}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCount()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_1
+
+    .line 254
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v0}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCount()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    sub-int/2addr v0, v1
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->addDots(I)V
+
+    goto :goto_0
+
+    .line 255
+    :cond_1
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v1}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCount()I
+
+    move-result v1
+
+    if-le v0, v1, :cond_2
+
+    .line 256
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v1}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCount()I
+
+    move-result v1
+
+    sub-int/2addr v0, v1
+
+    invoke-direct {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->removeDots(I)V
+
+    .line 257
+    :cond_2
+    :goto_0
+    nop
+
+    .line 258
+    return-void
+.end method
+
+.method private final refreshDotsSize()V
+    .locals 4
+
+    .line 287
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->initialized:Z
+
+    if-nez v0, :cond_0
+
+    .line 288
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSize:Z
+
+    .line 289
+    return-void
+
+    .line 291
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSize:Z
+
+    .line 292
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    if-nez v1, :cond_1
+
+    return-void
+
+    .line 293
+    :cond_1
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v1}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCount()I
+
+    move-result v1
+
+    :goto_0
+    if-ge v0, v1, :cond_3
+
+    .line 294
+    .local v0, "i":I
+    iget-object v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v2}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCurrentItem()I
+
+    move-result v2
+
+    if-eq v0, v2, :cond_2
+
+    .line 295
+    iget-object v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/obric/oui/indicator/IndicatorIcon;
+
+    iget v3, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsWidth:F
+
+    float-to-int v3, v3
+
+    invoke-interface {v2, v3}, Lcom/obric/oui/indicator/IndicatorIcon;->setWidth(I)V
+
+    .line 293
+    :cond_2
+    nop
+
+    .end local v0    # "i":I
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 297
+    :cond_3
+    return-void
+.end method
+
+.method private final refreshDotsSpacing()V
+    .locals 5
+
+    .line 310
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->initialized:Z
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 311
+    iput-boolean v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSpacing:Z
+
+    .line 312
+    return-void
+
+    .line 314
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsSpacing:Z
+
+    .line 315
+    iget-object v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    if-nez v2, :cond_1
+
+    return-void
+
+    .line 316
+    :cond_1
+    iget-object v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v2}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCurrentItem()I
+
+    move-result v2
+
+    :goto_0
+    if-ge v0, v2, :cond_2
+
+    .line 317
+    .local v0, "i":I
+    iget-object v3, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/obric/oui/indicator/IndicatorIcon;
+
+    iget v4, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsSpacing:F
+
+    float-to-int v4, v4
+
+    invoke-interface {v3, v4}, Lcom/obric/oui/indicator/IndicatorIcon;->setHorizontalMargin(I)V
+
+    .line 316
+    nop
+
+    .end local v0    # "i":I
+    add-int/2addr v0, v1
+
+    goto :goto_0
+
+    .line 319
+    :cond_2
+    return-void
+.end method
+
+.method private final refreshOnPageChangedListener()V
+    .locals 3
+
+    .line 300
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 301
+    :cond_0
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v0}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->isNotEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 302
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v0}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->removeOnPageChangeListener()V
+
+    .line 303
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->buildOnPageChangedListener()Lcom/obric/oui/indicator/OnPageChangeListenerHelper;
+
+    move-result-object v0
+
+    .line 304
+    .local v0, "onPageChangeListenerHelper":Lcom/obric/oui/indicator/OnPageChangeListenerHelper;
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v1, v0}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->addOnPageChangeListener(Lcom/obric/oui/indicator/OnPageChangeListenerHelper;)V
+
+    .line 305
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v1}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->getCurrentItem()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lcom/obric/oui/indicator/OnPageChangeListenerHelper;->onPageScrolled(IF)V
+
+    .line 307
+    .end local v0    # "onPageChangeListenerHelper":Lcom/obric/oui/indicator/OnPageChangeListenerHelper;
+    :cond_1
+    return-void
+.end method
+
+.method private final removeDots(I)V
+    .locals 3
+    .param p1, "count"    # I
+
+    .line 269
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    .line 270
+    .local v0, "indexOffset":I
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p1, :cond_0
+
+    .line 271
+    .local v1, "i":I
+    add-int v2, v1, v0
+
+    invoke-virtual {p0, v2}, Lcom/obric/oui/indicator/OBaseIndicator;->removeDot(I)V
+
+    .line 270
+    nop
+
+    .end local v1    # "i":I
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 273
+    :cond_0
+    return-void
+.end method
+
+.method private final setPagerDataSetObserver(Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;)V
+    .locals 2
+    .param p1, "value"    # Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    .line 330
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    if-eqz v0, :cond_0
+
+    .line 331
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v0}, Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;->getReleaseAction()Lkotlin/jvm/functions/Function1;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 333
+    :cond_0
+    iput-object p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    .line 334
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract addDot(I)V
+.end method
+
+.method protected final addDots(I)V
+    .locals 3
+    .param p1, "count"    # I
+
+    .line 262
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    .line 263
+    .local v0, "indexOffset":I
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p1, :cond_0
+
+    .line 264
+    .local v1, "i":I
+    add-int v2, v1, v0
+
+    invoke-virtual {p0, v2}, Lcom/obric/oui/indicator/OBaseIndicator;->addDot(I)V
+
+    .line 263
+    nop
+
+    .end local v1    # "i":I
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 266
+    :cond_0
+    return-void
+.end method
+
+.method public abstract buildOnPageChangedListener()Lcom/obric/oui/indicator/OnPageChangeListenerHelper;
+.end method
+
+.method public abstract getCustom()Lcom/obric/oui/indicator/OBaseIndicator$CustomDot;
+.end method
+
+.method public final getDotsClickable()Z
+    .locals 1
+
+    .line 137
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsClickable:Z
+
+    return v0
+.end method
+
+.method public final getDotsColor()I
+    .locals 1
+
+    .line 117
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsColor:I
+
+    return v0
+.end method
+
+.method public final getDotsCornerRadius()F
+    .locals 1
+
+    .line 130
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsCornerRadius:F
+
+    return v0
+.end method
+
+.method public final getDotsHeight()F
+    .locals 1
+
+    .line 78
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsHeight:F
+
+    return v0
+.end method
+
+.method public final getDotsSpacing()F
+    .locals 1
+
+    .line 101
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsSpacing:F
+
+    return v0
+.end method
+
+.method public final getDotsStrokeColor()I
+    .locals 1
+
+    .line 140
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeColor:I
+
+    return v0
+.end method
+
+.method public final getDotsStrokeWidth()F
+    .locals 1
+
+    .line 147
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeWidth:F
+
+    return v0
+.end method
+
+.method public final getDotsWidth()F
+    .locals 1
+
+    .line 71
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsWidth:F
+
+    return v0
+.end method
+
+.method protected final getInitialized()Z
+    .locals 1
+
+    .line 62
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->initialized:Z
+
+    return v0
+.end method
+
+.method public final getLayoutHeight()F
+    .locals 1
+
+    .line 86
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->layoutHeight:F
+
+    return v0
+.end method
+
+.method public final getPager()Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+    .locals 1
+
+    .line 187
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    return-object v0
+.end method
+
+.method protected final getPendingRefreshParentLayout()Z
+    .locals 1
+
+    .line 63
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshParentLayout:Z
+
+    return v0
+.end method
+
+.method public final getSidePadding()I
+    .locals 1
+
+    .line 94
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->sidePadding:I
+
+    return v0
+.end method
+
+.method public final getType()I
+    .locals 1
+
+    .line 108
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->type:I
+
+    return v0
+.end method
+
+.method protected onAttachedToWindow()V
+    .locals 0
+
+    .line 208
+    invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
+
+    .line 209
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDots()V
+
+    .line 210
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->postPendingRefresh()V
+
+    .line 211
+    return-void
+.end method
+
+.method public abstract refreshDotDraw(I)V
+.end method
+
+.method public final refreshDots()V
+    .locals 1
+
+    .line 215
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    if-nez v0, :cond_0
+
+    .line 216
+    return-void
+
+    .line 218
+    :cond_0
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$refreshDots$1;
+
+    invoke-direct {v0, p0}, Lcom/obric/oui/indicator/OBaseIndicator$refreshDots$1;-><init>(Lcom/obric/oui/indicator/OBaseIndicator;)V
+
+    check-cast v0, Ljava/lang/Runnable;
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->post(Ljava/lang/Runnable;)Z
+
+    .line 232
+    return-void
+.end method
+
+.method protected final refreshDotsDraws()V
+    .locals 3
+
+    .line 276
+    iget-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->initialized:Z
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 277
+    iput-boolean v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsDraws:Z
+
+    .line 278
+    return-void
+
+    .line 280
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshDotsDraws:Z
+
+    .line 281
+    iget-object v2, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dots:Ljava/util/ArrayList;
+
+    check-cast v2, Ljava/util/Collection;
+
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
+
+    move-result v2
+
+    :goto_0
+    if-ge v0, v2, :cond_1
+
+    .line 282
+    .local v0, "i":I
+    invoke-virtual {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotDraw(I)V
+
+    .line 281
+    nop
+
+    .end local v0    # "i":I
+    add-int/2addr v0, v1
+
+    goto :goto_0
+
+    .line 284
+    :cond_1
+    return-void
+.end method
+
+.method public abstract refreshParentLayout()V
+.end method
+
+.method public abstract removeDot(I)V
+.end method
+
+.method public final setDotsClickable(Z)V
+    .locals 0
+    .param p1, "<set-?>"    # Z
+
+    .line 137
+    iput-boolean p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsClickable:Z
+
+    return-void
+.end method
+
+.method public final setDotsColor(I)V
+    .locals 2
+    .param p1, "value"    # I
+
+    .line 119
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->type:I
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_0
+
+    .line 120
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsColor:I
+
+    if-eq v0, p1, :cond_1
+
+    .line 121
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsColor:I
+
+    .line 122
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsDraws()V
+
+    goto :goto_0
+
+    .line 125
+    :cond_0
+    const v0, 0x33ffffff
+
+    iput v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsColor:I
+
+    .line 126
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsDraws()V
+
+    .line 127
+    :cond_1
+    :goto_0
+    nop
+
+    .line 128
+    return-void
+.end method
+
+.method public final setDotsCornerRadius(F)V
+    .locals 1
+    .param p1, "value"    # F
+
+    .line 132
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsCornerRadius:F
+
+    cmpg-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 133
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsCornerRadius:F
+
+    .line 134
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsDraws()V
+
+    .line 136
+    :cond_0
+    return-void
+.end method
+
+.method public final setDotsHeight(F)V
+    .locals 1
+    .param p1, "value"    # F
+
+    .line 80
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsHeight:F
+
+    cmpg-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 81
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsHeight:F
+
+    .line 82
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsSize()V
+
+    .line 84
+    :cond_0
+    return-void
+.end method
+
+.method public final setDotsSpacing(F)V
+    .locals 1
+    .param p1, "value"    # F
+
+    .line 103
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsSpacing:F
+
+    cmpg-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 104
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsSpacing:F
+
+    .line 105
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsSpacing()V
+
+    .line 107
+    :cond_0
+    return-void
+.end method
+
+.method public final setDotsStrokeColor(I)V
+    .locals 1
+    .param p1, "value"    # I
+
+    .line 142
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeColor:I
+
+    if-eq v0, p1, :cond_0
+
+    .line 143
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeColor:I
+
+    .line 144
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsDraws()V
+
+    .line 146
+    :cond_0
+    return-void
+.end method
+
+.method public final setDotsStrokeWidth(F)V
+    .locals 1
+    .param p1, "value"    # F
+
+    .line 149
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeWidth:F
+
+    cmpg-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 150
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsStrokeWidth:F
+
+    .line 151
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsDraws()V
+
+    .line 153
+    :cond_0
+    return-void
+.end method
+
+.method public final setDotsWidth(F)V
+    .locals 1
+    .param p1, "value"    # F
+
+    .line 73
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsWidth:F
+
+    cmpg-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 74
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->dotsWidth:F
+
+    .line 75
+    invoke-direct {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsSize()V
+
+    .line 77
+    :cond_0
+    return-void
+.end method
+
+.method protected final setInitComplete()V
+    .locals 1
+
+    .line 156
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->initialized:Z
+
+    .line 157
+    return-void
+.end method
+
+.method protected final setInitialized(Z)V
+    .locals 0
+    .param p1, "<set-?>"    # Z
+
+    .line 62
+    iput-boolean p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->initialized:Z
+
+    return-void
+.end method
+
+.method public final setLayoutHeight(F)V
+    .locals 1
+    .param p1, "value"    # F
+
+    .line 88
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->layoutHeight:F
+
+    cmpg-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 89
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->layoutHeight:F
+
+    .line 90
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshParentLayout()V
+
+    .line 92
+    :cond_0
+    return-void
+.end method
+
+.method public final setPager(Lcom/obric/oui/indicator/OBaseIndicator$Pager;)V
+    .locals 1
+    .param p1, "value"    # Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    .line 189
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    if-eqz v0, :cond_0
+
+    .line 191
+    iget-object v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-interface {v0}, Lcom/obric/oui/indicator/OBaseIndicator$Pager;->removeOnPageChangeListener()V
+
+    .line 193
+    :cond_0
+    iput-object p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pager:Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    .line 194
+    return-void
+.end method
+
+.method protected final setPendingRefreshParentLayout(Z)V
+    .locals 0
+    .param p1, "<set-?>"    # Z
+
+    .line 63
+    iput-boolean p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pendingRefreshParentLayout:Z
+
+    return-void
+.end method
+
+.method public final setSidePadding(I)V
+    .locals 1
+    .param p1, "value"    # I
+
+    .line 96
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->sidePadding:I
+
+    if-eq v0, p1, :cond_0
+
+    .line 97
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->sidePadding:I
+
+    .line 98
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshParentLayout()V
+
+    .line 100
+    :cond_0
+    return-void
+.end method
+
+.method public final setType(I)V
+    .locals 1
+    .param p1, "value"    # I
+
+    .line 110
+    iget v0, p0, Lcom/obric/oui/indicator/OBaseIndicator;->type:I
+
+    if-eq v0, p1, :cond_0
+
+    .line 111
+    iput p1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->type:I
+
+    .line 112
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshParentLayout()V
+
+    .line 113
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDotsDraws()V
+
+    .line 115
+    :cond_0
+    return-void
+.end method
+
+.method public final setViewPager(Landroidx/viewpager/widget/ViewPager;)V
+    .locals 1
+    .param p1, "viewPager"    # Landroidx/viewpager/widget/ViewPager;
+    .annotation runtime Lkotlin/Deprecated;
+        message = "\u9700\u8981 pageCount, \u5426\u5219\u642d\u914dbanner\u7684\u65e0\u9650\u6a2a\u5212\u65f6\u53ef\u80fd\u51fa\u9519"
+        replaceWith = .subannotation Lkotlin/ReplaceWith;
+            expression = "setViewPager(ViewPager, Int) or setViewPager(ViewPager, () -> Int)"
+            imports = {}
+        .end subannotation
+    .end annotation
+
+    const-string/jumbo v0, "viewPager"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 342
+    invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/PagerAdapter;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/viewpager/widget/PagerAdapter;->getCount()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-virtual {p0, p1, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setViewPager(Landroidx/viewpager/widget/ViewPager;I)V
+
+    .line 343
+    return-void
+.end method
+
+.method public final setViewPager(Landroidx/viewpager/widget/ViewPager;I)V
+    .locals 1
+    .param p1, "viewPager"    # Landroidx/viewpager/widget/ViewPager;
+    .param p2, "pageCount"    # I
+
+    const-string/jumbo v0, "viewPager"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 346
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager$1;
+
+    invoke-direct {v0, p2}, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager$1;-><init>(I)V
+
+    check-cast v0, Lkotlin/jvm/functions/Function0;
+
+    invoke-virtual {p0, p1, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setViewPager(Landroidx/viewpager/widget/ViewPager;Lkotlin/jvm/functions/Function0;)V
+
+    .line 347
+    return-void
+.end method
+
+.method public final setViewPager(Landroidx/viewpager/widget/ViewPager;Lkotlin/jvm/functions/Function0;)V
+    .locals 2
+    .param p1, "viewPager"    # Landroidx/viewpager/widget/ViewPager;
+    .param p2, "pageCount"    # Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/viewpager/widget/ViewPager;",
+            "Lkotlin/jvm/functions/Function0<",
+            "Ljava/lang/Integer;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string/jumbo v0, "viewPager"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "pageCount"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 353
+    invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/PagerAdapter;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 360
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager$2;
+
+    invoke-direct {v0, p0, p1}, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager$2;-><init>(Lcom/obric/oui/indicator/OBaseIndicator;Landroidx/viewpager/widget/ViewPager;)V
+
+    check-cast v0, Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    invoke-direct {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setPagerDataSetObserver(Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;)V
+
+    .line 372
+    invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/PagerAdapter;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    if-eqz v1, :cond_0
+
+    check-cast v1, Landroid/database/DataSetObserver;
+
+    invoke-virtual {v0, v1}, Landroidx/viewpager/widget/PagerAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
+
+    .line 374
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager$3;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager$3;-><init>(Lcom/obric/oui/indicator/OBaseIndicator;Landroidx/viewpager/widget/ViewPager;Lkotlin/jvm/functions/Function0;)V
+
+    check-cast v0, Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setPager(Lcom/obric/oui/indicator/OBaseIndicator$Pager;)V
+
+    .line 416
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDots()V
+
+    .line 417
+    return-void
+
+    .line 372
+    :cond_0
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v1, "null cannot be cast to non-null type android.database.DataSetObserver"
+
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 354
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 355
+    nop
+
+    .line 354
+    const-string v1, "Set an adapter to the view pager before initializing the dots indicator ~"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/Throwable;
+
+    throw v0
+.end method
+
+.method public final setViewPager2(Landroidx/viewpager2/widget/ViewPager2;I)V
+    .locals 1
+    .param p1, "viewPager"    # Landroidx/viewpager2/widget/ViewPager2;
+    .param p2, "pageCount"    # I
+
+    const-string/jumbo v0, "viewPager"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 423
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager2$1;
+
+    invoke-direct {v0, p2}, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager2$1;-><init>(I)V
+
+    check-cast v0, Lkotlin/jvm/functions/Function0;
+
+    invoke-virtual {p0, p1, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setViewPager2(Landroidx/viewpager2/widget/ViewPager2;Lkotlin/jvm/functions/Function0;)V
+
+    .line 426
+    return-void
+.end method
+
+.method public final setViewPager2(Landroidx/viewpager2/widget/ViewPager2;Lkotlin/jvm/functions/Function0;)V
+    .locals 2
+    .param p1, "viewPager"    # Landroidx/viewpager2/widget/ViewPager2;
+    .param p2, "pageCount"    # Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/viewpager2/widget/ViewPager2;",
+            "Lkotlin/jvm/functions/Function0<",
+            "Ljava/lang/Integer;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string/jumbo v0, "viewPager"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "pageCount"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 432
+    invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 439
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager2$2;
+
+    invoke-direct {v0, p0, p1}, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager2$2;-><init>(Lcom/obric/oui/indicator/OBaseIndicator;Landroidx/viewpager2/widget/ViewPager2;)V
+
+    check-cast v0, Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    invoke-direct {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setPagerDataSetObserver(Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;)V
+
+    .line 450
+    invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    iget-object v1, p0, Lcom/obric/oui/indicator/OBaseIndicator;->pagerDataSetObserver:Lcom/obric/oui/indicator/OBaseIndicator$ReleaseMe;
+
+    if-eqz v1, :cond_0
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;
+
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->registerAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;)V
+
+    .line 452
+    new-instance v0, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager2$3;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/obric/oui/indicator/OBaseIndicator$setViewPager2$3;-><init>(Lcom/obric/oui/indicator/OBaseIndicator;Landroidx/viewpager2/widget/ViewPager2;Lkotlin/jvm/functions/Function0;)V
+
+    check-cast v0, Lcom/obric/oui/indicator/OBaseIndicator$Pager;
+
+    invoke-virtual {p0, v0}, Lcom/obric/oui/indicator/OBaseIndicator;->setPager(Lcom/obric/oui/indicator/OBaseIndicator$Pager;)V
+
+    .line 494
+    invoke-virtual {p0}, Lcom/obric/oui/indicator/OBaseIndicator;->refreshDots()V
+
+    .line 495
+    return-void
+
+    .line 450
+    :cond_0
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v1, "null cannot be cast to non-null type androidx.recyclerview.widget.RecyclerView.AdapterDataObserver"
+
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 433
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 434
+    nop
+
+    .line 433
+    const-string v1, "Set an adapter to the view pager before initializing the dots indicator ~"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/Throwable;
+
+    throw v0
+.end method

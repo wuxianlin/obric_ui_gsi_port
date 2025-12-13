@@ -1,0 +1,50 @@
+.class Landroidx/leanback/widget/GuidedActionsStylist$Api26Impl;
+.super Ljava/lang/Object;
+.source "GuidedActionsStylist.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/leanback/widget/GuidedActionsStylist;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "Api26Impl"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1581
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1583
+    return-void
+.end method
+
+.method static varargs setAutofillHints(Landroid/view/View;[Ljava/lang/String;)V
+    .locals 0
+    .param p0, "view"    # Landroid/view/View;
+    .param p1, "autofillHints"    # [Ljava/lang/String;
+
+    .line 1587
+    invoke-virtual {p0, p1}, Landroid/view/View;->setAutofillHints([Ljava/lang/String;)V
+
+    .line 1588
+    return-void
+.end method
+
+.method static setImportantForAutofill(Landroid/view/View;I)V
+    .locals 0
+    .param p0, "view"    # Landroid/view/View;
+    .param p1, "mode"    # I
+
+    .line 1595
+    invoke-virtual {p0, p1}, Landroid/view/View;->setImportantForAutofill(I)V
+
+    .line 1596
+    return-void
+.end method

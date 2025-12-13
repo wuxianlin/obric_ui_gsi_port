@@ -1,0 +1,836 @@
+.class public final Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+.super Lcom/google/protobuf/GeneratedMessageLite;
+.source "Mali.java"
+
+# interfaces
+.implements Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEventOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lperfetto/protos/Mali;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite<",
+        "Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;",
+        "Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;",
+        ">;",
+        "Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEventOrBuilder;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+.field public static final INFO_VAL_FIELD_NUMBER:I = 0x3
+
+.field public static final KCTX_ID_FIELD_NUMBER:I = 0x2
+
+.field public static final KCTX_TGID_FIELD_NUMBER:I = 0x1
+
+.field private static volatile PARSER:Lcom/google/protobuf/Parser;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/Parser<",
+            "Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private bitField0_:I
+
+.field private infoVal_:J
+
+.field private kctxId_:I
+
+.field private kctxTgid_:I
+
+
+# direct methods
+.method static bridge synthetic -$$Nest$mclearInfoVal(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;)V
+    .locals 0
+
+    invoke-direct {p0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->clearInfoVal()V
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$mclearKctxId(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;)V
+    .locals 0
+
+    invoke-direct {p0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->clearKctxId()V
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$mclearKctxTgid(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;)V
+    .locals 0
+
+    invoke-direct {p0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->clearKctxTgid()V
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$msetInfoVal(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;J)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->setInfoVal(J)V
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$msetKctxId(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->setKctxId(I)V
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$msetKctxTgid(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->setKctxTgid(I)V
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$sfgetDEFAULT_INSTANCE()Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 8002
+    new-instance v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-direct {v0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;-><init>()V
+
+    .line 8005
+    .local v0, "defaultInstance":Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    sput-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    .line 8006
+    const-class v1, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->registerDefaultInstance(Ljava/lang/Class;Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 8008
+    .end local v0    # "defaultInstance":Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 7635
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
+
+    .line 7636
+    return-void
+.end method
+
+.method private clearInfoVal()V
+    .locals 2
+
+    .line 7736
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    and-int/lit8 v0, v0, -0x5
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    .line 7737
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->infoVal_:J
+
+    .line 7738
+    return-void
+.end method
+
+.method private clearKctxId()V
+    .locals 1
+
+    .line 7702
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    and-int/lit8 v0, v0, -0x3
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    .line 7703
+    const/4 v0, 0x0
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->kctxId_:I
+
+    .line 7704
+    return-void
+.end method
+
+.method private clearKctxTgid()V
+    .locals 1
+
+    .line 7668
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    and-int/lit8 v0, v0, -0x2
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    .line 7669
+    const/4 v0, 0x0
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->kctxTgid_:I
+
+    .line 7670
+    return-void
+.end method
+
+.method public static getDefaultInstance()Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+
+    .line 8011
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static newBuilder()Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;
+    .locals 1
+
+    .line 7815
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-virtual {v0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;
+    .locals 1
+    .param p0, "prototype"    # Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    .line 7818
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-virtual {v0, p0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;
+
+    return-object v0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "input"    # Ljava/io/InputStream;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7792
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "input"    # Ljava/io/InputStream;
+    .param p1, "extensionRegistry"    # Lcom/google/protobuf/ExtensionRegistryLite;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7798
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0, p1}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "data"    # Lcom/google/protobuf/ByteString;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 7756
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "data"    # Lcom/google/protobuf/ByteString;
+    .param p1, "extensionRegistry"    # Lcom/google/protobuf/ExtensionRegistryLite;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 7763
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "input"    # Lcom/google/protobuf/CodedInputStream;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7803
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "input"    # Lcom/google/protobuf/CodedInputStream;
+    .param p1, "extensionRegistry"    # Lcom/google/protobuf/ExtensionRegistryLite;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7810
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "input"    # Ljava/io/InputStream;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7780
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "input"    # Ljava/io/InputStream;
+    .param p1, "extensionRegistry"    # Lcom/google/protobuf/ExtensionRegistryLite;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7787
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "data"    # Ljava/nio/ByteBuffer;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 7743
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "data"    # Ljava/nio/ByteBuffer;
+    .param p1, "extensionRegistry"    # Lcom/google/protobuf/ExtensionRegistryLite;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 7750
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom([B)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "data"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 7768
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[B)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+    .locals 1
+    .param p0, "data"    # [B
+    .param p1, "extensionRegistry"    # Lcom/google/protobuf/ExtensionRegistryLite;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 7775
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object v0
+
+    check-cast v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser<",
+            "Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;",
+            ">;"
+        }
+    .end annotation
+
+    .line 8017
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-virtual {v0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->getParserForType()Lcom/google/protobuf/Parser;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private setInfoVal(J)V
+    .locals 1
+    .param p1, "value"    # J
+
+    .line 7729
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    or-int/lit8 v0, v0, 0x4
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    .line 7730
+    iput-wide p1, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->infoVal_:J
+
+    .line 7731
+    return-void
+.end method
+
+.method private setKctxId(I)V
+    .locals 1
+    .param p1, "value"    # I
+
+    .line 7695
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    or-int/lit8 v0, v0, 0x2
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    .line 7696
+    iput p1, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->kctxId_:I
+
+    .line 7697
+    return-void
+.end method
+
+.method private setKctxTgid(I)V
+    .locals 1
+    .param p1, "value"    # I
+
+    .line 7661
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    or-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    .line 7662
+    iput p1, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->kctxTgid_:I
+
+    .line 7663
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+    .param p1, "method"    # Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;
+    .param p2, "arg0"    # Ljava/lang/Object;
+    .param p3, "arg1"    # Ljava/lang/Object;
+
+    .line 7950
+    sget-object v0, Lperfetto/protos/Mali$1;->$SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke:[I
+
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    const/4 v1, 0x0
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 7995
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw v0
+
+    .line 7992
+    :pswitch_0
+    return-object v1
+
+    .line 7989
+    :pswitch_1
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 7974
+    :pswitch_2
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 7975
+    .local v0, "parser":Lcom/google/protobuf/Parser;, "Lcom/google/protobuf/Parser<Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;>;"
+    if-nez v0, :cond_1
+
+    .line 7976
+    const-class v1, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    monitor-enter v1
+
+    .line 7977
+    :try_start_0
+    sget-object v2, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->PARSER:Lcom/google/protobuf/Parser;
+
+    move-object v0, v2
+
+    .line 7978
+    if-nez v0, :cond_0
+
+    .line 7979
+    new-instance v2, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;
+
+    sget-object v3, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-direct {v2, v3}, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    move-object v0, v2
+
+    .line 7982
+    sput-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 7984
+    :cond_0
+    monitor-exit v1
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v2
+
+    .line 7986
+    :cond_1
+    :goto_0
+    return-object v0
+
+    .line 7971
+    .end local v0    # "parser":Lcom/google/protobuf/Parser;, "Lcom/google/protobuf/Parser<Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;>;"
+    :pswitch_3
+    sget-object v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    return-object v0
+
+    .line 7958
+    :pswitch_4
+    const-string v0, "bitField0_"
+
+    const-string v1, "kctxTgid_"
+
+    const-string v2, "kctxId_"
+
+    const-string v3, "infoVal_"
+
+    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 7964
+    .local v0, "objects":[Ljava/lang/Object;
+    const-string v1, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u1004\u0000\u0002\u100b\u0001\u0003\u1003\u0002"
+
+    .line 7967
+    .local v1, "info":Ljava/lang/String;
+    sget-object v2, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->DEFAULT_INSTANCE:Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-static {v2, v1, v0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->newMessageInfo(Lcom/google/protobuf/MessageLite;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    return-object v2
+
+    .line 7955
+    .end local v0    # "objects":[Ljava/lang/Object;
+    .end local v1    # "info":Ljava/lang/String;
+    :pswitch_5
+    new-instance v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;
+
+    invoke-direct {v0, v1}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder;-><init>(Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent$Builder-IA;)V
+
+    return-object v0
+
+    .line 7952
+    :pswitch_6
+    new-instance v0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;
+
+    invoke-direct {v0}, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;-><init>()V
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public getInfoVal()J
+    .locals 2
+
+    .line 7722
+    iget-wide v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->infoVal_:J
+
+    return-wide v0
+.end method
+
+.method public getKctxId()I
+    .locals 1
+
+    .line 7688
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->kctxId_:I
+
+    return v0
+.end method
+
+.method public getKctxTgid()I
+    .locals 1
+
+    .line 7654
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->kctxTgid_:I
+
+    return v0
+.end method
+
+.method public hasInfoVal()Z
+    .locals 1
+
+    .line 7714
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    and-int/lit8 v0, v0, 0x4
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public hasKctxId()Z
+    .locals 1
+
+    .line 7680
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    and-int/lit8 v0, v0, 0x2
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public hasKctxTgid()Z
+    .locals 2
+
+    .line 7646
+    iget v0, p0, Lperfetto/protos/Mali$MaliMaliPMMCUHCTLSHADERSPENDONFtraceEvent;->bitField0_:I
+
+    const/4 v1, 0x1
+
+    and-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    return v1
+.end method

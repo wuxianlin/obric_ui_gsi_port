@@ -1,0 +1,40 @@
+.class Lcom/bytedance/ai/settings/IAISDKSettings$$Impl$3;
+.super Lcom/google/gson/reflect/TypeToken;
+.source "IAISDKSettings$$Impl.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bytedance/ai/settings/IAISDKSettings$$Impl;->frontierConfig()Lcom/bytedance/ai/settings/provider/FrontierConfig;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/gson/reflect/TypeToken<",
+        "Lcom/bytedance/ai/settings/provider/FrontierConfig;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/bytedance/ai/settings/IAISDKSettings$$Impl;
+
+
+# direct methods
+.method constructor <init>(Lcom/bytedance/ai/settings/IAISDKSettings$$Impl;)V
+    .locals 0
+    .param p1, "this$0"    # Lcom/bytedance/ai/settings/IAISDKSettings$$Impl;
+
+    .line 166
+    iput-object p1, p0, Lcom/bytedance/ai/settings/IAISDKSettings$$Impl$3;->this$0:Lcom/bytedance/ai/settings/IAISDKSettings$$Impl;
+
+    invoke-direct {p0}, Lcom/google/gson/reflect/TypeToken;-><init>()V
+
+    return-void
+.end method
