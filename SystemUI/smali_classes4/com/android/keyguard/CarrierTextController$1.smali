@@ -145,6 +145,12 @@
     :cond_0
     iget-object v0, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->subscriptionIds:[I
 
+    if-nez v0, :cond_wxl_1
+
+    const/4 v2, 0x0
+
+    goto :cond_1
+    :cond_wxl_1
     array-length v0, v0
 
     const/4 v2, 0x0
@@ -203,6 +209,13 @@
     :cond_1
     iget-object v0, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->subscriptionIds:[I
 
+    if-nez v0, :cond_wxl_2
+
+    const/4 v3, 0x1
+
+    goto :cond_2
+
+    :cond_wxl_2
     array-length v0, v0
 
     const/4 v3, 0x1
@@ -309,6 +322,8 @@
     .line 85
     :cond_3
     iget-object v3, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->listOfCarriers:[Ljava/lang/CharSequence;
+
+    if-eqz v3, :cond_4
 
     array-length v3, v3
 

@@ -668,9 +668,13 @@
     .local v3, "slotSeen":[Z
     iget-object v4, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->listOfCarriers:[Ljava/lang/CharSequence;
 
+    if-eqz v4, :cond_8
+
     array-length v4, v4
 
     iget-object v5, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->subscriptionIds:[I
+
+    if-eqz v5, :cond_8
 
     array-length v5, v5
 
@@ -913,9 +917,13 @@
 
     iget-object v1, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->listOfCarriers:[Ljava/lang/CharSequence;
 
+    if-eqz v1, :goto_3
+
     array-length v1, v1
 
     iget-object v2, p1, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->subscriptionIds:[I
+
+    if-eqz v2, :goto_3
 
     array-length v2, v2
 
@@ -1088,6 +1096,8 @@
     iget-object v2, p0, Lcom/android/systemui/shade/carrier/ShadeCarrierGroupController;->mCarrierTextCallbackInfo:Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;
 
     iget-object v2, v2, Lcom/android/keyguard/CarrierTextManager$CarrierTextCallbackInfo;->subscriptionIds:[I
+
+    if-eqz v2, :cond_5
 
     array-length v2, v2
 
