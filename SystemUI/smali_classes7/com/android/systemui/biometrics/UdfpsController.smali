@@ -689,11 +689,13 @@
     iput-boolean v2, v0, Lcom/android/systemui/biometrics/UdfpsController;->mIgnoreRefreshRate:Z
 
     .line 736
-    invoke-static/range {p4 .. p4}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    #invoke-static/range {p4 .. p4}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v2
+    #move-result-object v2
 
-    check-cast v2, Landroid/hardware/fingerprint/FingerprintManager;
+    #check-cast v2, Landroid/hardware/fingerprint/FingerprintManager;
+
+    move-object/from16 v2, p4
 
     iput-object v2, v0, Lcom/android/systemui/biometrics/UdfpsController;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
@@ -961,9 +963,12 @@
     .local v2, "mUdfpsOverlayController":Lcom/android/systemui/biometrics/UdfpsController$UdfpsOverlayController;
     iget-object v3, v0, Lcom/android/systemui/biometrics/UdfpsController;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
+    if-eqz v3, :cond_wxl
+
     invoke-virtual {v3, v2}, Landroid/hardware/fingerprint/FingerprintManager;->setUdfpsOverlayController(Landroid/hardware/fingerprint/IUdfpsOverlayController;)V
 
     .line 800
+    :cond_wxl
     new-instance v3, Landroid/content/IntentFilter;
 
     invoke-direct {v3}, Landroid/content/IntentFilter;-><init>()V
@@ -1002,6 +1007,8 @@
     .line 1026
     iget-object v0, p0, Lcom/android/systemui/biometrics/UdfpsController;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
+    if-eqz v0, :cond_wxl
+
     iget-object v1, p0, Lcom/android/systemui/biometrics/UdfpsController;->mSensorProps:Landroid/hardware/fingerprint/FingerprintSensorPropertiesInternal;
 
     iget v1, v1, Landroid/hardware/fingerprint/FingerprintSensorPropertiesInternal;->sensorId:I
@@ -1011,6 +1018,7 @@
     invoke-virtual {v0, v2, p1, p2, v1}, Landroid/hardware/fingerprint/FingerprintManager;->onUdfpsUiEvent(IJI)V
 
     .line 1028
+    :cond_wxl
     iget-object v0, p0, Lcom/android/systemui/biometrics/UdfpsController;->mLatencyTracker:Lcom/android/internal/util/LatencyTracker;
 
     const/16 v1, 0xe
@@ -1690,6 +1698,8 @@
     .line 1085
     iget-object v1, v0, Lcom/android/systemui/biometrics/UdfpsController;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
+    if-eqz v1, :cond_wxl
+
     iget-object v2, v0, Lcom/android/systemui/biometrics/UdfpsController;->mSensorProps:Landroid/hardware/fingerprint/FingerprintSensorPropertiesInternal;
 
     iget v4, v2, Landroid/hardware/fingerprint/FingerprintSensorPropertiesInternal;->sensorId:I
@@ -1724,6 +1734,7 @@
     invoke-static {v1, v0}, Landroid/os/Trace;->endAsyncSection(Ljava/lang/String;I)V
 
     .line 1089
+    :cond_wxl
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/systemui/biometrics/UdfpsController;->mOverlay:Lcom/android/systemui/biometrics/UdfpsControllerOverlay;
@@ -1945,6 +1956,8 @@
     .line 1138
     iget-object v3, v0, Lcom/android/systemui/biometrics/UdfpsController;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
+    if-eqz v3, :cond_wxl
+
     iget-object v2, v0, Lcom/android/systemui/biometrics/UdfpsController;->mSensorProps:Landroid/hardware/fingerprint/FingerprintSensorPropertiesInternal;
 
     iget v6, v2, Landroid/hardware/fingerprint/FingerprintSensorPropertiesInternal;->sensorId:I
@@ -1972,6 +1985,7 @@
     invoke-virtual/range {v3 .. v17}, Landroid/hardware/fingerprint/FingerprintManager;->onPointerUp(JIIFFFFFJJZ)V
 
     .line 1140
+    :cond_wxl
     iget-object v2, v0, Lcom/android/systemui/biometrics/UdfpsController;->mCallbacks:Ljava/util/Set;
 
     invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
