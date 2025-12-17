@@ -1,0 +1,6 @@
+version: 2.12.1
+apkFileName: sysmonitor-services.jar
+sdkInfo:
+  minSdkVersion: 29
+doNotCompress:
+- dex
