@@ -1,0 +1,14 @@
+.class synthetic Lcom/bytedance/common/util/KitKatV19Compat$1;
+.super Ljava/lang/Object;
+.source "KitKatV19Compat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/common/util/KitKatV19Compat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

@@ -1,0 +1,59 @@
+.class final Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase$ProtoAdapter_Phase;
+.super Lcom/squareup/wire/EnumAdapter;
+.source "StartPicoLinksResponse.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "ProtoAdapter_Phase"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/squareup/wire/EnumAdapter<",
+        "Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 1
+
+    .line 155
+    const-class v0, Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;
+
+    invoke-direct {p0, v0}, Lcom/squareup/wire/EnumAdapter;-><init>(Ljava/lang/Class;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected fromValue(I)Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;
+    .locals 0
+
+    .line 160
+    invoke-static {p1}, Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;->fromValue(I)Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected bridge synthetic fromValue(I)Lcom/squareup/wire/WireEnum;
+    .locals 0
+
+    .line 153
+    invoke-virtual {p0, p1}, Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase$ProtoAdapter_Phase;->fromValue(I)Lcom/obric/matrix/proto/StartPicoLinksResponse$Phase;
+
+    move-result-object p0
+
+    return-object p0
+.end method
