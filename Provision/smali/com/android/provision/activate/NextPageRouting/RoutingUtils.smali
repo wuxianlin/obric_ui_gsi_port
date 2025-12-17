@@ -98,7 +98,7 @@
     invoke-direct {v0}, Lcom/android/provision/activate/NextPageRouting/NextHandlerBase$NextToFace;-><init>()V
 
     .line 45
-    sget-object v1, Lcom/android/provision/activate/NextPageRouting/RoutingUtils;->sNextToPasswordHandler:Lcom/android/provision/activate/NextPageRouting/INextHandler;
+    sget-object v1, Lcom/android/provision/activate/NextPageRouting/RoutingUtils;->sNextToCloud:Lcom/android/provision/activate/NextPageRouting/INextHandler;
 
     invoke-interface {v0, v1}, Lcom/android/provision/activate/NextPageRouting/INextHandler;->setNext(Lcom/android/provision/activate/NextPageRouting/INextHandler;)Lcom/android/provision/activate/NextPageRouting/INextHandler;
 
