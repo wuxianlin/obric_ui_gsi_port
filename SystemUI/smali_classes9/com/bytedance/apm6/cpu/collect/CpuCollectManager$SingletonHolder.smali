@@ -1,0 +1,53 @@
+.class final Lcom/bytedance/apm6/cpu/collect/CpuCollectManager$SingletonHolder;
+.super Ljava/lang/Object;
+.source "CpuCollectManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "SingletonHolder"
+.end annotation
+
+
+# static fields
+.field private static final instance:Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 57
+    new-instance v0, Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;-><init>(Lcom/bytedance/apm6/cpu/collect/CpuCollectManager$1;)V
+
+    sput-object v0, Lcom/bytedance/apm6/cpu/collect/CpuCollectManager$SingletonHolder;->instance:Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 56
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$100()Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;
+    .locals 1
+
+    .line 56
+    sget-object v0, Lcom/bytedance/apm6/cpu/collect/CpuCollectManager$SingletonHolder;->instance:Lcom/bytedance/apm6/cpu/collect/CpuCollectManager;
+
+    return-object v0
+.end method

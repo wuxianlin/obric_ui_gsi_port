@@ -1,0 +1,34 @@
+.class public interface abstract Lperfetto/protos/Regulator$RegulatorSetVoltageCompleteFtraceEventOrBuilder;
+.super Ljava/lang/Object;
+.source "Regulator.java"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lperfetto/protos/Regulator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "RegulatorSetVoltageCompleteFtraceEventOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getName()Ljava/lang/String;
+.end method
+
+.method public abstract getNameBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getVal()I
+.end method
+
+.method public abstract hasName()Z
+.end method
+
+.method public abstract hasVal()Z
+.end method

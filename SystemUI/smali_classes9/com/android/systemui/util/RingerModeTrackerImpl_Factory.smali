@@ -1,0 +1,178 @@
+.class public final Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;
+.super Ljava/lang/Object;
+.source "RingerModeTrackerImpl_Factory.java"
+
+# interfaces
+.implements Ldagger/internal/Factory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldagger/internal/Factory<",
+        "Lcom/android/systemui/util/RingerModeTrackerImpl;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final audioManagerProvider:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Landroid/media/AudioManager;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final broadcastDispatcherProvider:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lcom/android/systemui/broadcast/BroadcastDispatcher;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final executorProvider:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljavax/inject/Provider<",
+            "Landroid/media/AudioManager;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Lcom/android/systemui/broadcast/BroadcastDispatcher;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Ljava/util/concurrent/Executor;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 36
+    .local p1, "audioManagerProvider":Ljavax/inject/Provider;, "Ljavax/inject/Provider<Landroid/media/AudioManager;>;"
+    .local p2, "broadcastDispatcherProvider":Ljavax/inject/Provider;, "Ljavax/inject/Provider<Lcom/android/systemui/broadcast/BroadcastDispatcher;>;"
+    .local p3, "executorProvider":Ljavax/inject/Provider;, "Ljavax/inject/Provider<Ljava/util/concurrent/Executor;>;"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 37
+    iput-object p1, p0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->audioManagerProvider:Ljavax/inject/Provider;
+
+    .line 38
+    iput-object p2, p0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->broadcastDispatcherProvider:Ljavax/inject/Provider;
+
+    .line 39
+    iput-object p3, p0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->executorProvider:Ljavax/inject/Provider;
+
+    .line 40
+    return-void
+.end method
+
+.method public static create(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljavax/inject/Provider<",
+            "Landroid/media/AudioManager;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Lcom/android/systemui/broadcast/BroadcastDispatcher;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Ljava/util/concurrent/Executor;",
+            ">;)",
+            "Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;"
+        }
+    .end annotation
+
+    .line 50
+    .local p0, "audioManagerProvider":Ljavax/inject/Provider;, "Ljavax/inject/Provider<Landroid/media/AudioManager;>;"
+    .local p1, "broadcastDispatcherProvider":Ljavax/inject/Provider;, "Ljavax/inject/Provider<Lcom/android/systemui/broadcast/BroadcastDispatcher;>;"
+    .local p2, "executorProvider":Ljavax/inject/Provider;, "Ljavax/inject/Provider<Ljava/util/concurrent/Executor;>;"
+    new-instance v0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+
+    return-object v0
+.end method
+
+.method public static newInstance(Landroid/media/AudioManager;Lcom/android/systemui/broadcast/BroadcastDispatcher;Ljava/util/concurrent/Executor;)Lcom/android/systemui/util/RingerModeTrackerImpl;
+    .locals 1
+    .param p0, "audioManager"    # Landroid/media/AudioManager;
+    .param p1, "broadcastDispatcher"    # Lcom/android/systemui/broadcast/BroadcastDispatcher;
+    .param p2, "executor"    # Ljava/util/concurrent/Executor;
+
+    .line 55
+    new-instance v0, Lcom/android/systemui/util/RingerModeTrackerImpl;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/android/systemui/util/RingerModeTrackerImpl;-><init>(Landroid/media/AudioManager;Lcom/android/systemui/broadcast/BroadcastDispatcher;Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public get()Lcom/android/systemui/util/RingerModeTrackerImpl;
+    .locals 3
+
+    .line 44
+    iget-object v0, p0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->audioManagerProvider:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/media/AudioManager;
+
+    iget-object v1, p0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->broadcastDispatcherProvider:Ljavax/inject/Provider;
+
+    invoke-interface {v1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/systemui/broadcast/BroadcastDispatcher;
+
+    iget-object v2, p0, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->executorProvider:Ljavax/inject/Provider;
+
+    invoke-interface {v2}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/concurrent/Executor;
+
+    invoke-static {v0, v1, v2}, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->newInstance(Landroid/media/AudioManager;Lcom/android/systemui/broadcast/BroadcastDispatcher;Ljava/util/concurrent/Executor;)Lcom/android/systemui/util/RingerModeTrackerImpl;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 13
+    invoke-virtual {p0}, Lcom/android/systemui/util/RingerModeTrackerImpl_Factory;->get()Lcom/android/systemui/util/RingerModeTrackerImpl;
+
+    move-result-object v0
+
+    return-object v0
+.end method

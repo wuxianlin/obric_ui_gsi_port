@@ -1,0 +1,64 @@
+.class final Lcom/relax/util/LynxUIParamAdapter$3;
+.super Ljava/util/HashSet;
+.source "LynxUIParamAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/relax/util/LynxUIParamAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/HashSet<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 1
+
+    .line 34
+    invoke-direct {p0}, Ljava/util/HashSet;-><init>()V
+
+    .line 36
+    const-string v0, "animationstart"
+
+    invoke-virtual {p0, v0}, Lcom/relax/util/LynxUIParamAdapter$3;->add(Ljava/lang/Object;)Z
+
+    .line 37
+    const-string v0, "animationiteration"
+
+    invoke-virtual {p0, v0}, Lcom/relax/util/LynxUIParamAdapter$3;->add(Ljava/lang/Object;)Z
+
+    .line 38
+    const-string v0, "animationend"
+
+    invoke-virtual {p0, v0}, Lcom/relax/util/LynxUIParamAdapter$3;->add(Ljava/lang/Object;)Z
+
+    .line 39
+    const-string v0, "animationcancel"
+
+    invoke-virtual {p0, v0}, Lcom/relax/util/LynxUIParamAdapter$3;->add(Ljava/lang/Object;)Z
+
+    .line 40
+    const-string/jumbo v0, "transitionstart"
+
+    invoke-virtual {p0, v0}, Lcom/relax/util/LynxUIParamAdapter$3;->add(Ljava/lang/Object;)Z
+
+    .line 41
+    const-string/jumbo v0, "transitionend"
+
+    invoke-virtual {p0, v0}, Lcom/relax/util/LynxUIParamAdapter$3;->add(Ljava/lang/Object;)Z
+
+    .line 42
+    return-void
+.end method

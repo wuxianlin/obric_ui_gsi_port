@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/settingslib/widget/flags/FeatureFlagsImpl;->autoHideEmptyLottieRes()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/IllustrationPreference/settingslib_illustrationpreference_flags_lib/android_common/javac/srcjars/com/android/settingslib/widget/flags/FeatureFlagsImpl.java,8,5,8,25,

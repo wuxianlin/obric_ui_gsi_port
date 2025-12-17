@@ -1,0 +1,114 @@
+.class public Lcom/android/wm/shell/recents/IRecentTasks$Default;
+.super Ljava/lang/Object;
+.source "IRecentTasks.java"
+
+# interfaces
+.implements Lcom/android/wm/shell/recents/IRecentTasks;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/wm/shell/recents/IRecentTasks;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Default"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public asBinder()Landroid/os/IBinder;
+    .locals 1
+
+    .line 36
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getRecentTasks(III)[Lcom/android/wm/shell/util/GroupedRecentTaskInfo;
+    .locals 1
+    .param p1, "maxNum"    # I
+    .param p2, "flags"    # I
+    .param p3, "userId"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 23
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getRunningTasks(I)[Landroid/app/ActivityManager$RunningTaskInfo;
+    .locals 1
+    .param p1, "maxNum"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 28
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public registerRecentTasksListener(Lcom/android/wm/shell/recents/IRecentTasksListener;)V
+    .locals 0
+    .param p1, "listener"    # Lcom/android/wm/shell/recents/IRecentTasksListener;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 15
+    return-void
+.end method
+
+.method public startRecentsTransition(Landroid/app/PendingIntent;Landroid/content/Intent;Landroid/os/Bundle;Landroid/app/IApplicationThread;Landroid/view/IRecentsAnimationRunner;)V
+    .locals 0
+    .param p1, "intent"    # Landroid/app/PendingIntent;
+    .param p2, "fillIn"    # Landroid/content/Intent;
+    .param p3, "options"    # Landroid/os/Bundle;
+    .param p4, "appThread"    # Landroid/app/IApplicationThread;
+    .param p5, "listener"    # Landroid/view/IRecentsAnimationRunner;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 33
+    return-void
+.end method
+
+.method public unregisterRecentTasksListener(Lcom/android/wm/shell/recents/IRecentTasksListener;)V
+    .locals 0
+    .param p1, "listener"    # Lcom/android/wm/shell/recents/IRecentTasksListener;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 19
+    return-void
+.end method

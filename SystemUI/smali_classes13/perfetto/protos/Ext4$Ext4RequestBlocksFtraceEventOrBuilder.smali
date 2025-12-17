@@ -1,0 +1,79 @@
+.class public interface abstract Lperfetto/protos/Ext4$Ext4RequestBlocksFtraceEventOrBuilder;
+.super Ljava/lang/Object;
+.source "Ext4.java"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lperfetto/protos/Ext4;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Ext4RequestBlocksFtraceEventOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getDev()J
+.end method
+
+.method public abstract getFlags()I
+.end method
+
+.method public abstract getGoal()J
+.end method
+
+.method public abstract getIno()J
+.end method
+
+.method public abstract getLen()I
+.end method
+
+.method public abstract getLleft()I
+.end method
+
+.method public abstract getLogical()I
+.end method
+
+.method public abstract getLright()I
+.end method
+
+.method public abstract getPleft()J
+.end method
+
+.method public abstract getPright()J
+.end method
+
+.method public abstract hasDev()Z
+.end method
+
+.method public abstract hasFlags()Z
+.end method
+
+.method public abstract hasGoal()Z
+.end method
+
+.method public abstract hasIno()Z
+.end method
+
+.method public abstract hasLen()Z
+.end method
+
+.method public abstract hasLleft()Z
+.end method
+
+.method public abstract hasLogical()Z
+.end method
+
+.method public abstract hasLright()Z
+.end method
+
+.method public abstract hasPleft()Z
+.end method
+
+.method public abstract hasPright()Z
+.end method

@@ -1,0 +1,50 @@
+.class final Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory$InstanceHolder;
+.super Ljava/lang/Object;
+.source "MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "InstanceHolder"
+.end annotation
+
+
+# static fields
+.field private static final INSTANCE:Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;
+
+
+# direct methods
+.method static bridge synthetic -$$Nest$sfgetINSTANCE()Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;
+    .locals 1
+
+    sget-object v0, Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory$InstanceHolder;->INSTANCE:Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;
+
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 41
+    new-instance v0, Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;
+
+    invoke-direct {v0}, Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;-><init>()V
+
+    sput-object v0, Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory$InstanceHolder;->INSTANCE:Lcom/android/systemui/media/dream/dagger/MediaComplicationComponent_MediaComplicationModule_ProvideLayoutParamsFactory;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 40
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

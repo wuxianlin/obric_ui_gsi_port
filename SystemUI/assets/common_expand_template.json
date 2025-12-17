@@ -1,0 +1,36 @@
+{
+  "icon": {
+    "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+    "width": 40,
+    "height": 40
+  },
+  "titleIcon": {
+    "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+    "width": 16,
+    "height": 16
+  },
+  "title": {
+    "text": "乌鲁木齐",
+    "textSize": 14,
+    "textColor": "#a8ffffff"
+  },
+  "content": {
+    "text": "18800000000",
+    "textSize": 16,
+    "textColor": "#ffffffff"
+  },
+  "buttonList": [
+    {
+      "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+      "width": 40,
+      "height": 40,
+      "id": "startIcon"
+    },
+    {
+      "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+      "width": 40,
+      "height": 40,
+      "id": "startIcon"
+    }
+  ]
+}

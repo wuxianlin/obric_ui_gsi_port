@@ -1,0 +1,49 @@
+.class public interface abstract Lperfetto/protos/Ext4$Ext4MbNewInodePaFtraceEventOrBuilder;
+.super Ljava/lang/Object;
+.source "Ext4.java"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lperfetto/protos/Ext4;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Ext4MbNewInodePaFtraceEventOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getDev()J
+.end method
+
+.method public abstract getIno()J
+.end method
+
+.method public abstract getPaLen()I
+.end method
+
+.method public abstract getPaLstart()J
+.end method
+
+.method public abstract getPaPstart()J
+.end method
+
+.method public abstract hasDev()Z
+.end method
+
+.method public abstract hasIno()Z
+.end method
+
+.method public abstract hasPaLen()Z
+.end method
+
+.method public abstract hasPaLstart()Z
+.end method
+
+.method public abstract hasPaPstart()Z
+.end method

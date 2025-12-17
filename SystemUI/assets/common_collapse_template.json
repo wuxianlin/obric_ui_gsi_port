@@ -1,0 +1,22 @@
+{
+  "startIcon": {
+    "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+    "width": 24,
+    "height": 24
+  },
+  "startText": {
+    "text": "新浪微博",
+    "textSize": 14,
+    "textColor": "#ff00ff0e"
+  },
+  "endIcon": {
+    "icon": "https://lf3-static.bytednsdoc.com/obj/eden-cn/kulauvymeh7pbynuhd/sina.png",
+    "width": 24,
+    "height": 24
+  },
+  "endText": {
+    "text": "00:11",
+    "textSize": 14,
+    "textColor": "#ff00ff0e"
+  }
+}

@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/android/systemui/qs/QSTouchHandler$$ExternalSyntheticLambda2;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/android/systemui/qs/QSTouchHandler;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/android/systemui/qs/QSTouchHandler;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/systemui/qs/QSTouchHandler$$ExternalSyntheticLambda2;->f$0:Lcom/android/systemui/qs/QSTouchHandler;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Lcom/android/systemui/qs/QSTouchHandler$$ExternalSyntheticLambda2;->f$0:Lcom/android/systemui/qs/QSTouchHandler;
+
+    invoke-static {v0}, Lcom/android/systemui/qs/QSTouchHandler;->$r8$lambda$Js_NoGee0F89EKDnn29ssahT4Q0(Lcom/android/systemui/qs/QSTouchHandler;)V
+
+    return-void
+.end method

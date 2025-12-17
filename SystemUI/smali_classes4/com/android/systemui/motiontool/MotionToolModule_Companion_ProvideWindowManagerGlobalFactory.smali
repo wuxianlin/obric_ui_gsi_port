@@ -1,0 +1,88 @@
+.class public final Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory;
+.super Ljava/lang/Object;
+.source "MotionToolModule_Companion_ProvideWindowManagerGlobalFactory.java"
+
+# interfaces
+.implements Ldagger/internal/Factory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory$InstanceHolder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldagger/internal/Factory<",
+        "Landroid/view/WindowManagerGlobal;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 25
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static create()Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory;
+    .locals 1
+
+    .line 32
+    invoke-static {}, Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory$InstanceHolder;->-$$Nest$sfgetINSTANCE()Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static provideWindowManagerGlobal()Landroid/view/WindowManagerGlobal;
+    .locals 1
+
+    .line 36
+    sget-object v0, Lcom/android/systemui/motiontool/MotionToolModule;->Companion:Lcom/android/systemui/motiontool/MotionToolModule$Companion;
+
+    invoke-virtual {v0}, Lcom/android/systemui/motiontool/MotionToolModule$Companion;->provideWindowManagerGlobal()Landroid/view/WindowManagerGlobal;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ldagger/internal/Preconditions;->checkNotNullFromProvides(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/WindowManagerGlobal;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public get()Landroid/view/WindowManagerGlobal;
+    .locals 1
+
+    .line 28
+    invoke-static {}, Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory;->provideWindowManagerGlobal()Landroid/view/WindowManagerGlobal;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 11
+    invoke-virtual {p0}, Lcom/android/systemui/motiontool/MotionToolModule_Companion_ProvideWindowManagerGlobalFactory;->get()Landroid/view/WindowManagerGlobal;
+
+    move-result-object v0
+
+    return-object v0
+.end method
