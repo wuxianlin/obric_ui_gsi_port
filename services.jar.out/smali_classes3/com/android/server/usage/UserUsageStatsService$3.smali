@@ -1,0 +1,64 @@
+.class Lcom/android/server/usage/UserUsageStatsService$3;
+.super Ljava/lang/Object;
+.source "UserUsageStatsService.java"
+
+# interfaces
+.implements Lcom/android/server/usage/UsageStatsDatabase$StatCombiner;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/usage/UserUsageStatsService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/android/server/usage/UsageStatsDatabase$StatCombiner<",
+        "Landroid/app/usage/EventStats;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 431
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public combine(Lcom/android/server/usage/IntervalStats;ZLjava/util/List;)Z
+    .locals 1
+    .param p1, "stats"    # Lcom/android/server/usage/IntervalStats;
+    .param p2, "mutable"    # Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/android/server/usage/IntervalStats;",
+            "Z",
+            "Ljava/util/List<",
+            "Landroid/app/usage/EventStats;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 435
+    .local p3, "accResult":Ljava/util/List;, "Ljava/util/List<Landroid/app/usage/EventStats;>;"
+    invoke-virtual {p1, p3}, Lcom/android/server/usage/IntervalStats;->addEventStatsTo(Ljava/util/List;)V
+
+    .line 436
+    const/4 v0, 0x1
+
+    return v0
+.end method

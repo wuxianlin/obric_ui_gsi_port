@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/server/policy/Flags;->supportInputWakeupDelegate()Z,out/soong/.intermediates/frameworks/base/services/core/java/com/android/server/policy/policy_flags_lib/android_common/7bd916565615329d50364be05485f3c9/javac/srcjars/com/android/server/policy/Flags.java,10,5,10,25,

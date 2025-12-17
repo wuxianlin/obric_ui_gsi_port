@@ -1,0 +1,85 @@
+.class Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver$MyHandler;
+.super Landroid/os/Handler;
+.source "AccessibilityController.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "MyHandler"
+.end annotation
+
+
+# static fields
+.field public static final MESSAGE_COMPUTE_CHANGED_WINDOWS:I = 0x1
+
+
+# instance fields
+.field final synthetic this$0:Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver;
+
+
+# direct methods
+.method public constructor <init>(Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver;Landroid/os/Looper;)V
+    .locals 1
+    .param p2, "looper"    # Landroid/os/Looper;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            null,
+            null
+        }
+    .end annotation
+
+    .line 2011
+    iput-object p1, p0, Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver$MyHandler;->this$0:Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver;
+
+    .line 2012
+    const/4 p1, 0x0
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p2, p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
+
+    .line 2013
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
+    .param p1, "message"    # Landroid/os/Message;
+
+    .line 2018
+    iget v0, p1, Landroid/os/Message;->what:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 2020
+    :pswitch_0
+    iget-object v0, p0, Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver$MyHandler;->this$0:Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/server/wm/AccessibilityController$WindowsForAccessibilityObserver;->computeChangedWindows(Z)V
+
+    .line 2023
+    :goto_0
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
